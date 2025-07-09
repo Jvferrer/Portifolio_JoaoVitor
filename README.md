@@ -2,7 +2,7 @@
 
 🧪 **Quality Assurance (QA)** apaixonado por tecnologia, qualidade de software e inovação. Trabalho com **testes manuais e automatizados** em APIs REST, sistemas Web e Mobile, garantindo a eficiência, segurança e estabilidade das aplicações.
 
-🔹 Ferramentas **Cypress, Postman, Swagger, SQL, Mobile, Appium, Robot Framework, JMeter, Jira, Azure DevOps, Git, GitHub, GitLab e GitKraken**  
+🔹 Ferramentas **Cypress, Appium, Robot Framework, Postman, Swagger, SQL, JMeter, Jira, Azure DevOps, Git, GitHub, GitLab e GitKraken**  
 🔹 Focado em **entrega de qualidade, automação de testes e integração contínua (CI/CD)**  
 🔹 Sempre buscando **aprender novas ferramentas e contribuir com times ágeis e colaborativos**
 
