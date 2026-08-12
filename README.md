@@ -4,7 +4,7 @@ Portfólio no formato **sidebar + abas** (Skills, Experiência, Projetos, Certif
 
 ## Live
 
-https://jvferrer.github.io/Portfolio_JoaoVitor/
+https://jvferrer.github.io/Portifolio_JoaoVitor/
 
 ## Perfil
 

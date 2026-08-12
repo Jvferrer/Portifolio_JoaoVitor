@@ -37,7 +37,7 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.getByRole("heading", { name: /ISTQB.*Foundation Level 4\.0/i })).toBeVisible();
     await expect(page.getByText(/26-CTFL-15087-BR/i)).toBeVisible();
     await expect(page.getByText(/Bacharelado em ADS/i)).toBeVisible();
-    await expect(page.getByText(/Unyleya/i)).toBeVisible();
+    await expect(page.getByText(/Unyleya/i).first()).toBeVisible();
   });
 
   test("tipografia Sora + Figtree", async ({ page }) => {
