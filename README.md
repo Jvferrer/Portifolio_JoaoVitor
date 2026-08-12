@@ -1,18 +1,20 @@
 # 🚀 Olá! Sou João Vitor Ferrer
 
-### QA Engineer | Quality Assurance | Testes Manuais & Automação
+### QA Engineer | Quality Assurance | Testes Manuais, Automação & IA
 
 [![GitHub](https://img.shields.io/badge/GitHub-jvferrer-181717?style=for-the-badge&logo=github)](https://github.com/jvferrer)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-João%20Vitor%20Ferrer-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jo%C3%A3o-vitor-ferrer-do-nascimento-10bb68226/)
 [![ISTQB](https://img.shields.io/badge/ISTQB-CTFL-005A9C?style=for-the-badge)](#-certificações)
 
-Sou **QA Engineer** com foco em **qualidade de software, testes manuais, automação de testes e validação de aplicações Web, Mobile e APIs**.
+Sou **QA Engineer** com foco em **qualidade de software, testes manuais, automação de testes, APIs, performance e Inteligência Artificial aplicada à qualidade**.
 
-Atuo em diferentes etapas do ciclo de qualidade, desde a **análise de requisitos e regras de negócio** até a criação, execução e automação de cenários de teste.
+Atuo na validação de aplicações **Web, Mobile e APIs**, trabalhando desde a análise de requisitos e regras de negócio até a criação, execução e automação de cenários de teste.
 
-Tenho experiência com **testes funcionais, regressão, integração, E2E, API, performance, stress e testes exploratórios**, além de validações em banco de dados, análise de requisições, respostas e investigação de inconsistências entre Frontend, Backend e Banco de Dados.
+Tenho experiência com **testes funcionais, regressão, integração, E2E, API, performance, stress e testes exploratórios**, além de validações em banco de dados, análise de requisições e respostas e investigação de inconsistências entre Frontend, Backend e Banco de Dados.
 
-Busco contribuir de forma estratégica para o desenvolvimento de software, atuando na **prevenção de defeitos, identificação de riscos e melhoria contínua da qualidade dos produtos**.
+Também venho direcionando minha atuação para **IA aplicada ao processo de QA**, incluindo uso de **LLMs (Large Language Models)** como apoio à análise de requisitos, geração e revisão de cenários, identificação de casos de teste, análise de defeitos e otimização do processo de qualidade.
+
+Meu objetivo é atuar de forma estratégica no ciclo de desenvolvimento, contribuindo para **prevenção de defeitos, identificação de riscos, automação, observabilidade e melhoria contínua da qualidade dos produtos**.
 
 ---
 
@@ -38,6 +40,8 @@ Busco contribuir de forma estratégica para o desenvolvimento de software, atuan
 - Validação de critérios de aceite
 - Evidências e documentação de testes
 - Continuous Testing
+- Shift-Left Testing
+- Análise de riscos e impactos
 
 ---
 
@@ -55,6 +59,42 @@ Busco contribuir de forma estratégica para o desenvolvimento de software, atuan
 - Automação de APIs
 - BDD
 - Integração de testes com CI/CD
+- Testes automatizados para regressão
+- Testes automatizados para fluxos críticos
+
+---
+
+## 🧠 Inteligência Artificial & LLMs
+
+Tenho interesse e atuação no uso de **Inteligência Artificial aplicada à Engenharia de Qualidade de Software**, utilizando LLMs como ferramentas de apoio ao processo de QA.
+
+### Aplicações em QA
+
+- **LLMs (Large Language Models)**
+- IA aplicada a Quality Assurance
+- AI-Assisted Testing
+- Geração e revisão de cenários de teste
+- Análise de requisitos com IA
+- Identificação de casos de teste
+- Geração de dados de teste
+- Análise e classificação de bugs
+- Apoio na criação de casos de teste
+- Análise de critérios de aceite
+- Geração e revisão de documentação
+- Otimização de processos de QA
+- Apoio à automação de testes
+- Engenharia de prompts para atividades de QA
+
+### Conceitos
+
+- Generative AI
+- Large Language Models (LLMs)
+- Prompt Engineering
+- AI-Assisted Software Testing
+- AI-Augmented QA
+- Testes de aplicações baseadas em IA
+- Validação de respostas geradas por LLMs
+- Análise de consistência e qualidade de respostas
 
 ---
 
@@ -73,6 +113,25 @@ Busco contribuir de forma estratégica para o desenvolvimento de software, atuan
 - Testes de integração
 - Validação de regras de negócio
 - Análise de requisições e respostas
+- Validação de contratos de API
+
+---
+
+## ⚡ Performance & Load Testing
+
+- **Apache JMeter**
+- **k6**
+- Testes de Performance
+- Testes de Carga
+- Testes de Stress
+- Testes de Volume
+- Testes de Resiliência
+- Análise de tempo de resposta
+- Análise de throughput
+- Análise de latência
+- Identificação de gargalos
+- Validação de comportamento sob carga
+- Análise de métricas de performance
 
 ---
 
@@ -94,7 +153,7 @@ Busco contribuir de forma estratégica para o desenvolvimento de software, atuan
 
 ## 🛠️ Ferramentas
 
-### Gestão e Qualidade
+### Gestão & Qualidade
 
 - **Jira**
 - **Azure DevOps**
@@ -109,13 +168,14 @@ Busco contribuir de forma estratégica para o desenvolvimento de software, atuan
 - **GitKraken**
 - **Git Bash**
 
-### Monitoramento & Análise
+### Monitoramento & Observabilidade
 
 - **Datadog**
 - **Firebase**
 
 ### Performance
 
+- **k6**
 - **JMeter**
 
 ### Desenvolvimento
@@ -135,6 +195,8 @@ Busco contribuir de forma estratégica para o desenvolvimento de software, atuan
 - Continuous Testing
 - Shift-Left Testing
 - Testes Baseados em Risco
+- Quality Engineering
+- Risk-Based Testing
 
 ---
 
@@ -200,29 +262,38 @@ Experiência na validação de funcionalidades e integrações envolvendo:
 ```text
                          QUALITY ASSURANCE
                                 │
-              ┌─────────────────┼─────────────────┐
-              │                 │                 │
-          MANUAL TESTING     API TESTING      AUTOMATION
-              │                 │                 │
-        ┌─────┼─────┐       Postman          Playwright
-        │     │     │       Swagger           Cypress
-      Func   Reg   Smoke                     Selenium
-        │     │     │                         Appium
-        └─────┼─────┘
-              │
-              ▼
-           TESTES E2E
-              │
-              ▼
-         BANCO DE DADOS
-              │
-        PostgreSQL / SQL
-              │
-              ▼
-             CI/CD
-              │
-              ▼
-      CONTINUOUS TESTING
-              │
-              ▼
-       QUALIDADE DE SOFTWARE
+        ┌───────────────────────┼───────────────────────┐
+        │                       │                       │
+   MANUAL TESTING          API TESTING             AUTOMATION
+        │                       │                       │
+   ┌────┼────┐             Postman              Playwright
+   │    │    │             Swagger               Cypress
+ Func  Reg  Smoke                                Selenium
+   │    │    │                                    Appium
+   └────┼────┘
+        │
+        ▼
+     TESTES E2E
+        │
+        ├───────────────────────┐
+        │                       │
+        ▼                       ▼
+  BANCO DE DADOS          PERFORMANCE
+        │                       │
+   PostgreSQL / SQL        k6 / JMeter
+        │                       │
+        └───────────┬───────────┘
+                    │
+                    ▼
+                   CI/CD
+                    │
+                    ▼
+            CONTINUOUS TESTING
+                    │
+                    ▼
+             AI-ASSISTED QA
+                    │
+                 LLMs / IA
+                    │
+                    ▼
+          QUALITY ENGINEERING
