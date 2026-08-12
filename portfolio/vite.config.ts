@@ -7,4 +7,8 @@ export default defineConfig({
   build: {
     target: "es2022",
   },
+  preview: {
+    host: true,
+    allowedHosts: true,
+  },
 });
