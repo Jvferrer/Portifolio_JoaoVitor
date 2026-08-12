@@ -1,7 +1,7 @@
-node_modules/
+blob-report/
 dist/
+node_modules/
+playwright-report/
 qa-artifacts/
 test-results/
-playwright-report/
-blob-report/
 *.tsbuildinfo
