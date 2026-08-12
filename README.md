@@ -1,46 +1,239 @@
-# 🚀 Olá! Sou João Vitor Ferrer 👋🏽
+# 🚀 Olá! Sou João Vitor Ferrer
 
-🧪 **Quality Assurance (QA)** apaixonado por tecnologia, qualidade de software e inovação. Trabalho com **testes manuais e automatizados** em APIs REST, sistemas Web e Mobile, garantindo a eficiência, segurança e estabilidade das aplicações.
+### QA Engineer | Quality Assurance | Testes Manuais & Automação
 
-🔹 Ferramentas **Cypress, Appium, Robot Framework, Postman, Swagger, SQL, JMeter, Jira, Azure DevOps, Git, GitHub, GitLab e GitKraken**  
-🔹 Focado em **entrega de qualidade, automação de testes e integração contínua (CI/CD)**  
-🔹 Sempre buscando **aprender novas ferramentas e contribuir com times ágeis e colaborativos**
+[![GitHub](https://img.shields.io/badge/GitHub-jvferrer-181717?style=for-the-badge&logo=github)](https://github.com/jvferrer)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-João%20Vitor%20Ferrer-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jo%C3%A3o-vitor-ferrer-do-nascimento-10bb68226/)
+[![ISTQB](https://img.shields.io/badge/ISTQB-CTFL%20%7C%20CTFL--AT-005A9C?style=for-the-badge)](#-certificações)
 
-🎓 Formado em **Análise e Desenvolvimento de Sistemas**
+Sou **QA Engineer** apaixonado por qualidade de software, automação de testes e melhoria contínua.
 
----
+Atuo na **qualidade de aplicações Web, Mobile e APIs**, trabalhando desde a análise de requisitos e regras de negócio até a criação, execução e automação de cenários de teste.
 
-<div align="center">
-  <a href="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" height="40" width="40" /></a>
-  <a href="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" height="40" width="40" /></a>
-  <a href="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" height="40" width="40" /></a>
-  <a href="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" height="40" width="40" /></a>
-  <a href="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub" height="40" width="40" /></a>
-  <a href="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" height="40" width="40" /></a>
-  <a href="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg" alt="Jira" height="40" width="40" /></a>
-  <a href="https://cdn.worldvectorlogo.com/logos/gitkraken.svg"><img src="https://cdn.worldvectorlogo.com/logos/gitkraken.svg" alt="GitKraken" height="40" width="40" /></a>
-  <a href="https://cdn.worldvectorlogo.com/logos/appium.svg"><img src="https://cdn.worldvectorlogo.com/logos/appium.svg" alt="Appium" height="40" width="40" /></a>
-  <a href="https://cdn.worldvectorlogo.com/logos/robot-framework.svg"><img src="https://cdn.worldvectorlogo.com/logos/robot-framework.svg" alt="Robot Framework" height="40" width="40" /></a>
-  <a href="https://cdn.worldvectorlogo.com/logos/datadog.svg"><img src="https://cdn.worldvectorlogo.com/logos/datadog.svg" alt="Datadog" height="40" width="40" /></a>
-</div>
+Tenho experiência com **testes funcionais, regressão, integração, E2E, API, performance, stress e testes exploratórios**, além de validações em banco de dados e análise de logs, requisições e respostas.
+
+Meu objetivo é atuar de forma estratégica dentro do ciclo de desenvolvimento, contribuindo não apenas para **encontrar bugs**, mas principalmente para **prevenir problemas e aumentar a confiabilidade do software**.
 
 ---
 
-## 🌍 Projetos em produção:
+## 🧪 QA & Software Testing
 
-- 🔴⚫ **[Clube de Regatas do Flamengo](https://nacao.flamengo.com.br/?utm_source=ingressos&utm_medium=home)**  
-- ⚪🔴⚫ **[São Paulo Futebol Clube](https://sociotorcedor.com.br/)**  
-- ⚫⭐ **[Botafogo de Futebol e Regatas](https://camisa7.botafogo.com.br/)**  
-- 🟢⚪🔴 **[Fluminense Football Club](https://sociofutebol.com.br/ingressos/)**  
-- 🟡⚫🔴 **[Barcelona Sporting Club (Equador)](https://sociosbsc.com.ec/)**  
-- ⚪⚫✠ **[CR Vasco da Gama](https://sociogigante.com/?utm_source=google&utm_medium=cpc&utm_campaign=22422937322&utm_content=744844559215&utm_term=ingresso%20vasco&gad_source=1&gad_campaignid=22422937322&gbraid=0AAAAAq3pFt8bpZ_m1JAJNhSSVdPpwFIC6&gclid=CjwKCAjwprjDBhBTEiwA1m1d0jAmJ4IAdPtnuQ8F21wsL8s89t86YsE1700ZDAtwRX-W7fHopF7wWhoC8W0QAvD_BwE)**  
+- Testes Manuais
+- Testes Funcionais
+- Testes de Regressão
+- Smoke Testing
+- Testes de Integração
+- Testes End-to-End (E2E)
+- Testes de API
+- Testes de Performance
+- Testes de Stress
+- Testes Exploratórios
+- Testes Baseados em Risco
+- BDD
+- Criação e execução de cenários de teste
+- Análise e reporte de bugs
+- Validação de regras de negócio
+- Análise de requisitos
+- Validação de critérios de aceite
+- Evidências e documentação de testes
+- Continuous Testing
 
 ---
 
-## 📲 Contato
+## 🤖 Automação de Testes
 
-[![WhatsApp](https://img.shields.io/badge/-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5511940236678)  
-[![Instagram](https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/qa_jvferrer/)  
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jo%C3%A3o-vitor-ferrer-do-nascimento-10bb68226/)  
-[![Email](https://img.shields.io/badge/-Email-%23333?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joao.21ferrer@gmail.com)
+- **Playwright**
+- **Cypress**
+- **Selenium**
+- **Robot Framework**
+- **Appium**
+- **TypeScript**
+- **JavaScript**
+- Page Object Model (POM)
+- Automação E2E
+- Automação de APIs
+- Testes orientados a comportamento (BDD)
+- Integração de testes com CI/CD
 
+---
+
+## 🔌 API & Backend Testing
+
+- **Postman**
+- **Swagger / OpenAPI**
+- APIs REST
+- Validação de Status Codes
+- Validação de Payloads
+- Headers
+- Autenticação
+- Requisições e respostas HTTP
+- Testes de integração
+- Testes positivos e negativos
+- Validação de contratos
+- Validação de regras de negócio
+
+---
+
+## 🗄️ Banco de Dados
+
+- **PostgreSQL**
+- **MySQL**
+- **SQL Server**
+- **Oracle / PL/SQL**
+- Consultas SQL
+- JOINs
+- Filtros e agregações
+- Validação de dados
+- Análise de registros
+- Manipulação de dados para testes
+- Investigação de inconsistências entre Frontend, API e Banco de Dados
+
+---
+
+## 🛠️ Ferramentas & Ecossistema
+
+### Gestão e Qualidade
+
+- **Jira**
+- **Azure DevOps**
+- **Qase**
+- **Trello**
+
+### Versionamento
+
+- **Git**
+- **GitHub**
+- **GitLab**
+- **GitKraken**
+- **Git Bash**
+
+### Monitoramento & Análise
+
+- **Datadog**
+- **Firebase**
+
+### Performance
+
+- **JMeter**
+
+### Desenvolvimento
+
+- **Visual Studio Code**
+
+---
+
+## 🔄 Metodologias & Práticas
+
+- Scrum
+- Kanban
+- BDD
+- Metodologias Ágeis
+- Metodologia Cascata
+- CI/CD
+- Continuous Testing
+- Shift-Left Testing
+- Testes Baseados em Risco
+
+---
+
+## 🎓 Formação Acadêmica
+
+### Pós-graduação Lato Sensu — Especialização em Testes de Software
+
+**Unyleya**
+
+📅 fev/2026 – nov/2026  
+📚 **Em andamento**
+
+Especialização voltada para **Testes de Software, Garantia da Qualidade, processos de qualidade e metodologias aplicadas ao desenvolvimento de software**.
+
+### Análise e Desenvolvimento de Sistemas
+
+**Estácio**
+
+📅 jan/2023 – jul/2025  
+✅ **Concluído**
+
+---
+
+## 🏆 Certificações
+
+- **ISTQB® Certified Tester Foundation Level (CTFL)**
+- **ISTQB® Certified Tester Foundation Level — Agile Tester (CTFL-AT)**
+- **Scrum Fundamentals Certified (SFC™)**
+
+### Cursos & Formação Complementar
+
+- **QAzando — Automation Tests Bootcamp**
+  - Cypress
+  - Playwright
+  - API Automation
+- Automação de Testes com Cypress
+- Postman — Automação e Testes de APIs
+- SQL
+- Git & GitHub
+- Fundamentos de QA
+
+---
+
+## ⚽ Projetos & Experiência em Produtos Digitais
+
+Atuação em projetos voltados para **plataformas digitais, programas de sócio-torcedor, ingressos, benefícios, experiências e relacionamento com torcedores**.
+
+Experiência com validação de funcionalidades críticas envolvendo:
+
+- Cadastro e atualização de dados
+- Autenticação e integrações
+- APIs e serviços backend
+- Check-in
+- Benefícios e recompensas
+- Sistemas de pontuação
+- Roletas e mecânicas de gamificação
+- Microtransações
+- Integrações entre sistemas
+- Regras de negócio
+- Jobs e processos automatizados
+- Persistência e consistência de dados
+
+### Plataformas
+
+- 🔴⚫ **Clube de Regatas do Flamengo**
+- ⚪🔴⚫ **São Paulo Futebol Clube**
+- ⚫⭐ **Botafogo de Futebol e Regatas**
+- 🟢⚪🔴 **Fluminense Football Club**
+- 🟡⚫🔴 **Barcelona Sporting Club — Equador**
+- ⚪⚫✠ **CR Vasco da Gama**
+
+---
+
+## 📊 Meu foco em Quality Assurance
+
+```text
+                         QUALITY ASSURANCE
+                                │
+              ┌─────────────────┼─────────────────┐
+              │                 │                 │
+          MANUAL TESTING     API TESTING      AUTOMATION
+              │                 │                 │
+        ┌─────┼─────┐       Postman          Playwright
+        │     │     │       Swagger           Cypress
+      Func   Reg   Smoke                     Selenium
+        │     │     │                         Appium
+        └─────┼─────┘
+              │
+              ▼
+           TESTES E2E
+              │
+              ▼
+         BANCO DE DADOS
+              │
+         PostgreSQL / SQL
+              │
+              ▼
+             CI/CD
+              │
+              ▼
+      CONTINUOUS TESTING
+              │
+              ▼
+       QUALIDADE DE SOFTWARE
