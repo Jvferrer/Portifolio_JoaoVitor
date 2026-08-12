@@ -2,6 +2,7 @@ export type CaseStudy = {
   domain: string;
   title: string;
   description: string;
+  impact: string;
   tags: string[];
 };
 
@@ -12,78 +13,123 @@ export type Experience = {
   description: string;
 };
 
+export type FeaturedProject = {
+  name: string;
+  blurb: string;
+  href: string;
+  kind: string;
+};
+
 export const portfolio = {
   profile: {
     name: "João Vitor Ferrer",
-    role: "Analista de Testes / QA",
+    role: "QA Engineer · Automação · APIs",
+    headline: "Qualidade que sustenta release com confiança.",
     summary:
-      "Qualidade de software para produtos Web, APIs e Mobile. Atuo da descoberta do risco à decisão de release, combinando testes manuais, automação, dados e colaboração com produto e engenharia.",
-    recruiterNote: "Aberto a oportunidades em QA, automação de testes e qualidade de software.",
-    quickFacts: ["QA manual, automação e APIs", "Inglês intermediário", "Remoto ou híbrido em São Paulo"],
+      "Analista de Testes com atuação em Web, APIs e Mobile — do risco à evidência, com automação, dados e colaboração próxima de produto e engenharia.",
     location: "Santo André, SP · remoto ou híbrido",
     certification: "ISTQB® CTFL",
     photo: `${import.meta.env.BASE_URL}assets/joao-vitor-ferrer.jpg`,
     resume: `${import.meta.env.BASE_URL}assets/Curriculo_Joao_Vitor_Ferrer_QA.pdf`,
-    linkedin: "https://www.linkedin.com/in/joao-vitor-ferrer-do-nascimento/",
+    linkedin:
+      "https://www.linkedin.com/in/jo%C3%A3o-vitor-ferrer-do-nascimento-10bb68226/",
+    instagram: "https://www.instagram.com/qa_jvferrer/",
+    github: "https://github.com/Jvferrer",
+    whatsapp: "https://wa.me/5511940236678",
     email: "joao.21ferrer@gmail.com",
-    phone: "+55 (11) 94023-6678",
+    phone: "(11) 94023-6678",
     phoneUri: "tel:+5511940236678",
   },
+  highlights: [
+    "Automação E2E com Cypress e Playwright",
+    "APIs, SQL e validação de contratos",
+    "Shift-left em times ágeis e CI/CD",
+  ],
   capabilities: [
     {
       title: "Automação",
-      description: "Cypress, Playwright e Robot Framework para jornadas E2E e regressão.",
+      description: "Jornadas E2E, regressão e gates de qualidade no pipeline.",
       items: ["Cypress", "Playwright", "Robot Framework", "Selenium"],
     },
     {
       title: "APIs e dados",
-      description: "Validação de contratos, payloads, status codes e consistência de dados.",
+      description: "Contratos, payloads, status codes e consistência em banco.",
       items: ["Postman", "Swagger", "SQL", "PostgreSQL", "MySQL", "Oracle"],
     },
     {
-      title: "Estratégia de qualidade",
-      description: "Cobertura orientada a risco, critérios de aceite, evidências, homologação e qualidade integrada ao CI/CD.",
-      items: ["BDD", "TDD", "Shift Left", "Jira", "Azure DevOps", "GitHub Actions", "Jenkins", "Azure Pipelines", "Octane"],
+      title: "Estratégia",
+      description: "Risco, critérios de aceite, evidências e homologação.",
+      items: ["BDD", "Shift Left", "Jira", "Azure DevOps", "GitHub Actions"],
     },
     {
       title: "Performance",
-      description: "Avaliação de comportamento sob carga para apoiar estabilidade e decisões de release.",
+      description: "Carga e estabilidade para apoiar decisão de release.",
       items: ["k6", "JMeter"],
     },
     {
-      title: "Tecnologias de desenvolvimento",
-      description: "Leitura, validação e apoio à automação em aplicações Web e scripts.",
-      items: ["HTML", "CSS", "JavaScript", "Python"],
+      title: "Engenharia",
+      description: "Leitura de código e automação em stacks modernas.",
+      items: ["TypeScript", "JavaScript", "Angular", "React", "Python"],
     },
   ],
+  featured: [
+    {
+      name: "Jv-Funkos",
+      blurb: "Loja Angular + TypeScript com Playwright, CI e GitHub Pages.",
+      href: "https://jvferrer.github.io/Loja-FunkoPop/",
+      kind: "Projeto pessoal",
+    },
+    {
+      name: "Nação Flamengo",
+      blurb: "Contexto de qualidade em plataforma de sócio-torcedor e Matchday.",
+      href: "https://nacao.flamengo.com.br/",
+      kind: "Produto em produção",
+    },
+    {
+      name: "Sócio Torcedor SPFC",
+      blurb: "Jornadas de planos, integrações e regras de negócio críticas.",
+      href: "https://sociotorcedor.com.br/",
+      kind: "Produto em produção",
+    },
+    {
+      name: "Camisa 7 Botafogo",
+      blurb: "Fluxos digitais de relacionamento e conversão para o clube.",
+      href: "https://camisa7.botafogo.com.br/",
+      kind: "Produto em produção",
+    },
+  ] satisfies FeaturedProject[],
   cases: [
     {
       domain: "E-commerce esportivo",
       title: "Sócio-torcedor e Matchday",
       description:
-        "Qualidade em jornadas de produtos e planos para clubes, cobrindo regras de negócio, integrações, APIs e dados.",
-      tags: ["Cypress", "Postman", "PostgreSQL", "DBeaver", "Jira", "k6"],
+        "Qualidade em jornadas de planos e produtos para clubes, cobrindo regras de negócio, integrações, APIs e dados.",
+      impact: "Contexto multi-clube com alto volume de regras e integrações.",
+      tags: ["Cypress", "Postman", "PostgreSQL", "Jira", "k6"],
     },
     {
       domain: "Telecom / CX",
-      title: "Estratégia de testes e homologação",
+      title: "Vivo — Sinfonia CX",
       description:
-        "Atuação no projeto Vivo – Sinfonia CX, com cobertura funcional, refinamento, evidências e homologação em ambiente ágil escalável.",
-      tags: ["Octane", "Confluence", "Selenium", "Shift Left", "LLMs"],
+        "Estratégia de testes, cobertura funcional, refinamento, evidências e homologação em ambiente ágil escalável.",
+      impact: "Homologação com rastreabilidade e comunicação clara de risco.",
+      tags: ["Octane", "Confluence", "Selenium", "Shift Left"],
     },
     {
       domain: "SaaS",
-      title: "Regras de negócio e dados corporativos",
+      title: "Performance e recompensas",
       description:
-        "Testes funcionais, integrações e validações de dados para uma plataforma de gestão de performance e recompensas.",
-      tags: ["Postman", "Swagger", "MySQL", "Trello", "Kanban"],
+        "Testes funcionais, integrações e validações de dados em plataforma corporativa de gestão.",
+      impact: "Foco em regras de negócio e consistência de dados.",
+      tags: ["Postman", "Swagger", "MySQL", "Kanban"],
     },
     {
       domain: "Meios de pagamento",
       title: "Fluxos transacionais Web e Mobile",
       description:
-        "Validação de contratos de API, transações, conciliações e jornadas em dispositivos físicos.",
-      tags: ["Oracle", "VTS", "Robot Framework", "Azure DevOps", "Mobile"],
+        "Validação de contratos de API, transações, conciliações e jornadas em dispositivos.",
+      impact: "Atenção a fluxos críticos e evidências para release.",
+      tags: ["Oracle", "VTS", "Robot Framework", "Azure DevOps"],
     },
   ] satisfies CaseStudy[],
   experience: [
@@ -91,13 +137,15 @@ export const portfolio = {
       period: "2025 — atual",
       role: "Analista de Testes de Software",
       company: "Feng Brasil",
-      description: "E-commerce e sócio-torcedor: testes manuais, automação com Cypress, APIs, PostgreSQL e Shift Left.",
+      description:
+        "E-commerce e sócio-torcedor: testes manuais, automação Cypress, APIs, PostgreSQL e Shift Left.",
     },
     {
       period: "2022 — 2024",
       role: "Arquiteto de Testes",
       company: "Spread Tecnologia",
-      description: "Projeto Vivo – Sinfonia CX: estratégia, homologação, evidências e colaboração em ambiente ágil escalável.",
+      description:
+        "Projeto Vivo – Sinfonia CX: estratégia, homologação, evidências e colaboração em ambiente ágil escalável.",
     },
     {
       period: "2020 — 2021",
@@ -113,24 +161,24 @@ export const portfolio = {
     },
   ] satisfies Experience[],
   workflow: [
-    ["01", "Entendo o risco", "Refino requisitos, regras de negócio e critérios de aceite com o time."],
-    ["02", "Modelo cenários", "Estruturo cobertura funcional, exploratória, regressiva e de integrações."],
-    ["03", "Valido por camadas", "Combino UI, APIs, banco, massa de dados e performance quando necessário."],
-    ["04", "Comunico decisões", "Registro evidências, antecipo riscos e apoio decisões de release com clareza."],
+    ["01", "Risco", "Refino requisitos, regras de negócio e critérios de aceite."],
+    ["02", "Cenários", "Cobertura funcional, exploratória, regressiva e de integrações."],
+    ["03", "Camadas", "UI, APIs, banco, massa de dados e performance quando necessário."],
+    ["04", "Release", "Evidências, antecipação de riscos e decisão com clareza."],
   ] as const,
   ai: {
     description:
-      "Uso IA generativa e agentes como aceleradores do trabalho de qualidade — não como substitutos da análise de QA. O objetivo é reduzir tempo operacional e ampliar a investigação, mantendo revisão humana e contexto de negócio.",
+      "Uso IA generativa como acelerador do ciclo de QA — com revisão humana, contexto de negócio e cuidado com dados.",
     applications: [
-      ["Planejamento", "Organização de requisitos, riscos, critérios de aceite e estratégias iniciais de teste."],
-      ["Cenários", "Expansão de casos positivos, negativos, bordas e combinações de regras de negócio."],
-      ["Documentação", "Estruturação de casos de teste, evidências, relatórios de defeito e comunicação com o time."],
-      ["Investigação", "Apoio à análise de logs, hipóteses de causa raiz e triagem inicial de defeitos."],
+      ["Planejamento", "Riscos, critérios de aceite e estratégias iniciais."],
+      ["Cenários", "Positivos, negativos, bordas e combinações de regras."],
+      ["Documentação", "Casos, evidências e comunicação com o time."],
+      ["Investigação", "Hipóteses de causa raiz e triagem inicial."],
     ],
     principles: [
-      "Revisão humana antes de usar qualquer saída em decisões de qualidade.",
-      "Preservação de contexto de negócio e cuidado com dados sensíveis.",
-      "Uso da IA para elevar cobertura e velocidade, não para mascarar risco.",
+      "Revisão humana antes de decisões de qualidade.",
+      "Contexto de negócio e proteção de dados sensíveis.",
+      "IA para velocidade e cobertura — nunca para mascarar risco.",
     ],
   },
 } as const;

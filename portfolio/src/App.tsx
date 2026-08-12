@@ -1,28 +1,68 @@
+import { useEffect, useId, useState } from "react";
 import { portfolio } from "./data/portfolio";
 
 const TagList = ({ items }: { items: readonly string[] }) => (
-  <div className="tags">
+  <ul className="tags">
     {items.map((item) => (
-      <span className="tag" key={item}>
+      <li className="tag" key={item}>
         {item}
-      </span>
+      </li>
     ))}
-  </div>
+  </ul>
 );
 
 function Header() {
+  const [open, setOpen] = useState(false);
+  const menuId = useId();
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  const close = () => setOpen(false);
+
   return (
     <header className="site-header">
       <div className="container header-content">
-        <a className="brand" href="#inicio" aria-label="Início do portfólio">
-          JOÃO VITOR <span>FERRER</span> <small>· QA</small>
+        <a className="brand" href="#inicio" onClick={close}>
+          <span className="brand-mark">JV</span>
+          <span className="brand-text">
+            João Vitor Ferrer
+            <small>QA Engineer</small>
+          </span>
         </a>
-        <nav aria-label="Navegação principal">
-          <a href="#sobre">Perfil</a>
-          <a href="#experiencia">Trajetória</a>
-          <a href="#projetos">Cases</a>
-          <a href="#ia">IA aplicada</a>
-          <a href="#contato">Contato</a>
+
+        <button
+          className="menu-toggle"
+          type="button"
+          aria-expanded={open}
+          aria-controls={menuId}
+          onClick={() => setOpen((value) => !value)}
+        >
+          <span className="sr-only">{open ? "Fechar menu" : "Abrir menu"}</span>
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </button>
+
+        <nav id={menuId} className={open ? "is-open" : undefined} aria-label="Navegação principal">
+          <a href="#sobre" onClick={close}>
+            Perfil
+          </a>
+          <a href="#projetos" onClick={close}>
+            Projetos
+          </a>
+          <a href="#experiencia" onClick={close}>
+            Trajetória
+          </a>
+          <a href="#cases" onClick={close}>
+            Cases
+          </a>
+          <a href="#contato" onClick={close}>
+            Contato
+          </a>
         </nav>
       </div>
     </header>
@@ -34,53 +74,45 @@ function Hero() {
 
   return (
     <section className="hero" id="inicio">
-      <div className="container hero-grid">
-        <div className="hero-copy">
-          <span className="eyebrow">Quality Assurance · Automação · APIs</span>
-          <h1>
-            Qualidade que gera
-            <br />
-            <strong>confiança no produto.</strong>
-          </h1>
-          <p>{profile.summary}</p>
-          <p className="recruiter-note">
-            <span aria-hidden="true">●</span> {profile.recruiterNote}
-          </p>
-          <ul className="hero-facts" aria-label="Informações profissionais em destaque">
-            {profile.quickFacts.map((fact) => (
-              <li key={fact}>{fact}</li>
-            ))}
-          </ul>
-          <div className="actions">
-            <a className="button" href={profile.linkedin} target="_blank" rel="noreferrer">
-              Ver LinkedIn <span aria-hidden="true">↗</span>
-            </a>
-            <a className="button secondary" href={profile.resume} download="Curriculo_Joao_Vitor_Ferrer_QA.pdf">
-              Baixar currículo
-            </a>
-          </div>
+      <div className="hero-media" aria-hidden="true">
+        <img src={profile.photo} alt="" />
+      </div>
+      <div className="container hero-copy reveal">
+        <p className="brand-hero">{profile.name}</p>
+        <h1>{profile.headline}</h1>
+        <p className="hero-lead">{profile.summary}</p>
+        <div className="actions">
+          <a className="button" href={profile.whatsapp} target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+          <a className="button secondary" href={profile.resume} download="Curriculo_Joao_Vitor_Ferrer_QA.pdf">
+            Baixar currículo
+          </a>
         </div>
-        <aside className="profile-card">
-          <img src={profile.photo} alt="João Vitor Ferrer" />
-          <div className="profile-card-body">
-            <span className="eyebrow">Disponibilidade</span>
-            <strong>{profile.location}</strong>
-            <div className="profile-divider" />
-            <span className="eyebrow">Certificação</span>
-            <strong>{profile.certification}</strong>
-            <div className="profile-divider" />
-            <a className="profile-contact" href={`mailto:${profile.email}?subject=Oportunidade%20em%20QA`}>
-              Falar por e-mail <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </aside>
       </div>
     </section>
   );
 }
 
 function App() {
-  const { profile, capabilities, cases, experience, workflow, ai } = portfolio;
+  const { profile, highlights, capabilities, featured, cases, experience, workflow, ai } = portfolio;
+
+  useEffect(() => {
+    const nodes = Array.from(document.querySelectorAll(".reveal"));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.16 },
+    );
+    nodes.forEach((node) => observer.observe(node));
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
@@ -91,19 +123,26 @@ function App() {
       <main id="conteudo">
         <Hero />
 
-        <section id="sobre">
+        <section id="sobre" className="reveal">
           <div className="container">
             <div className="section-heading">
               <div>
-                <span className="eyebrow">Resumo para recrutadores</span>
-                <h2>Qualidade com visão de produto, engenharia e negócio.</h2>
+                <p className="eyebrow">Perfil</p>
+                <h2>QA com visão de produto, engenharia e negócio.</h2>
               </div>
-              <p>Atuação em e-commerce, telecom, SaaS e meios de pagamento — contextos com regras de negócio, integrações e dados críticos.</p>
+              <p>
+                {profile.location} · {profile.certification} · aberto a oportunidades em
+                automação e qualidade de software.
+              </p>
             </div>
+            <ul className="highlight-list">
+              {highlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
             <div className="capability-grid">
-              {capabilities.map((capability, index) => (
-                <article className="capability-card" key={capability.title}>
-                  <span className="card-index">0{index + 1}</span>
+              {capabilities.map((capability) => (
+                <article key={capability.title}>
                   <h3>{capability.title}</h3>
                   <p>{capability.description}</p>
                   <TagList items={capability.items} />
@@ -113,21 +152,48 @@ function App() {
           </div>
         </section>
 
-        <section id="experiencia" className="surface-section">
+        <section id="projetos" className="surface-section reveal">
           <div className="container">
             <div className="section-heading">
               <div>
-                <span className="eyebrow">Trajetória</span>
+                <p className="eyebrow">Projetos</p>
+                <h2>Do lab pessoal a produtos em produção.</h2>
+              </div>
+              <p>Links públicos para contexto — sem código proprietário nem dados sensíveis.</p>
+            </div>
+            <div className="featured-grid">
+              {featured.map((project) => (
+                <a
+                  className="featured-link"
+                  key={project.name}
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>{project.kind}</span>
+                  <strong>{project.name}</strong>
+                  <p>{project.blurb}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="experiencia" className="reveal">
+          <div className="container">
+            <div className="section-heading">
+              <div>
+                <p className="eyebrow">Trajetória</p>
                 <h2>Repertório que cresce com o desafio.</h2>
               </div>
             </div>
             <div className="timeline">
               {experience.map((item) => (
-                <article className="timeline-item" key={`${item.company}-${item.period}`}>
-                  <span className="period">{item.period}</span>
+                <article key={`${item.company}-${item.period}`}>
+                  <span>{item.period}</span>
                   <div>
                     <h3>
-                      {item.role} <span>· {item.company}</span>
+                      {item.role} <em>· {item.company}</em>
                     </h3>
                     <p>{item.description}</p>
                   </div>
@@ -137,25 +203,21 @@ function App() {
           </div>
         </section>
 
-        <section id="projetos">
+        <section id="cases" className="surface-section reveal">
           <div className="container">
             <div className="section-heading">
               <div>
-                <span className="eyebrow">Experiência aplicada</span>
+                <p className="eyebrow">Cases</p>
                 <h2>Contexto de produto antes da ferramenta.</h2>
               </div>
-              <p>Cases profissionais apresentados sem código proprietário, informações sensíveis ou dados internos.</p>
             </div>
             <div className="case-grid">
-              {cases.map((item, index) => (
-                <article className="case-card" key={item.title}>
-                  <div>
-                    <span className="case-domain">
-                      CASE {String(index + 1).padStart(2, "0")} · {item.domain}
-                    </span>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                  </div>
+              {cases.map((item) => (
+                <article key={item.title}>
+                  <span>{item.domain}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <p className="impact">{item.impact}</p>
                   <TagList items={item.tags} />
                 </article>
               ))}
@@ -163,43 +225,37 @@ function App() {
           </div>
         </section>
 
-        <section id="ia" className="surface-section">
+        <section id="ia" className="reveal">
           <div className="container">
-            <div className="ai-intro">
-              <span className="eyebrow">IA aplicada a QA</span>
-              <h2>IA e LLMs aplicados ao ciclo de QA.</h2>
+            <div className="section-heading">
+              <div>
+                <p className="eyebrow">IA aplicada</p>
+                <h2>Aceleradores no ciclo de QA.</h2>
+              </div>
               <p>{ai.description}</p>
             </div>
             <div className="ai-grid">
               {ai.applications.map(([title, description]) => (
-                <article className="ai-application" key={title}>
+                <article key={title}>
                   <h3>{title}</h3>
                   <p>{description}</p>
                 </article>
               ))}
             </div>
-            <div className="principles">
-              <span className="eyebrow">Princípios de uso responsável</span>
-              <ul>
-                {ai.principles.map((principle) => (
-                  <li key={principle}>{principle}</li>
-                ))}
-              </ul>
-            </div>
           </div>
         </section>
 
-        <section>
+        <section className="surface-section reveal">
           <div className="container">
             <div className="section-heading">
               <div>
-                <span className="eyebrow">Como atuo</span>
+                <p className="eyebrow">Como atuo</p>
                 <h2>Do requisito à decisão de release.</h2>
               </div>
             </div>
             <div className="workflow">
               {workflow.map(([number, title, description]) => (
-                <article className="workflow-step" key={number}>
+                <article key={number}>
                   <span>{number}</span>
                   <h3>{title}</h3>
                   <p>{description}</p>
@@ -211,24 +267,42 @@ function App() {
       </main>
 
       <footer id="contato">
-        <div className="container contact-content">
+        <div className="container contact-panel reveal">
           <div>
-            <span className="eyebrow">Contato</span>
-            <h2>Vamos falar sobre qualidade de software?</h2>
+            <p className="eyebrow">Contato</p>
+            <h2>Vamos falar sobre qualidade?</h2>
             <p>
               {profile.email} · {profile.phone}
             </p>
           </div>
           <div className="actions">
-            <a className="button" href={`mailto:${profile.email}`}>
-              Enviar e-mail
+            <a className="button" href={profile.whatsapp} target="_blank" rel="noreferrer">
+              WhatsApp
             </a>
-            <a className="button secondary" href={profile.phoneUri}>
-              Ligar agora
+            <a className="button secondary" href={`mailto:${profile.email}`}>
+              E-mail
+            </a>
+            <a className="button secondary" href={profile.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn
             </a>
           </div>
         </div>
-        <div className="container footer-note">© 2026 {profile.name} · Portfólio pessoal de Quality Assurance.</div>
+        <div className="container footer-note">
+          <span>
+            © {new Date().getFullYear()} {profile.name}
+          </span>
+          <span className="footer-links">
+            <a href={profile.github} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href={profile.instagram} target="_blank" rel="noreferrer">
+              Instagram
+            </a>
+            <a href={profile.resume} download>
+              Currículo
+            </a>
+          </span>
+        </div>
       </footer>
     </>
   );
