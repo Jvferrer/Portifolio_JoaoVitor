@@ -4,15 +4,15 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-jvferrer-181717?style=for-the-badge&logo=github)](https://github.com/jvferrer)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-João%20Vitor%20Ferrer-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jo%C3%A3o-vitor-ferrer-do-nascimento-10bb68226/)
-[![ISTQB](https://img.shields.io/badge/ISTQB-CTFL%20%7C%20CTFL--AT-005A9C?style=for-the-badge)](#-certificações)
+[![ISTQB](https://img.shields.io/badge/ISTQB-CTFL-005A9C?style=for-the-badge)](#-certificações)
 
-Sou **QA Engineer** apaixonado por qualidade de software, automação de testes e melhoria contínua.
+Sou **QA Engineer** com foco em **qualidade de software, testes manuais, automação de testes e validação de aplicações Web, Mobile e APIs**.
 
-Atuo na **qualidade de aplicações Web, Mobile e APIs**, trabalhando desde a análise de requisitos e regras de negócio até a criação, execução e automação de cenários de teste.
+Atuo em diferentes etapas do ciclo de qualidade, desde a **análise de requisitos e regras de negócio** até a criação, execução e automação de cenários de teste.
 
-Tenho experiência com **testes funcionais, regressão, integração, E2E, API, performance, stress e testes exploratórios**, além de validações em banco de dados e análise de logs, requisições e respostas.
+Tenho experiência com **testes funcionais, regressão, integração, E2E, API, performance, stress e testes exploratórios**, além de validações em banco de dados, análise de requisições, respostas e investigação de inconsistências entre Frontend, Backend e Banco de Dados.
 
-Meu objetivo é atuar de forma estratégica dentro do ciclo de desenvolvimento, contribuindo não apenas para **encontrar bugs**, mas principalmente para **prevenir problemas e aumentar a confiabilidade do software**.
+Busco contribuir de forma estratégica para o desenvolvimento de software, atuando na **prevenção de defeitos, identificação de riscos e melhoria contínua da qualidade dos produtos**.
 
 ---
 
@@ -30,7 +30,8 @@ Meu objetivo é atuar de forma estratégica dentro do ciclo de desenvolvimento, 
 - Testes Exploratórios
 - Testes Baseados em Risco
 - BDD
-- Criação e execução de cenários de teste
+- Criação de cenários de teste
+- Execução de cenários de teste
 - Análise e reporte de bugs
 - Validação de regras de negócio
 - Análise de requisitos
@@ -52,7 +53,7 @@ Meu objetivo é atuar de forma estratégica dentro do ciclo de desenvolvimento, 
 - Page Object Model (POM)
 - Automação E2E
 - Automação de APIs
-- Testes orientados a comportamento (BDD)
+- BDD
 - Integração de testes com CI/CD
 
 ---
@@ -66,11 +67,12 @@ Meu objetivo é atuar de forma estratégica dentro do ciclo de desenvolvimento, 
 - Validação de Payloads
 - Headers
 - Autenticação
-- Requisições e respostas HTTP
-- Testes de integração
+- Requisições HTTP
+- Respostas HTTP
 - Testes positivos e negativos
-- Validação de contratos
+- Testes de integração
 - Validação de regras de negócio
+- Análise de requisições e respostas
 
 ---
 
@@ -90,7 +92,7 @@ Meu objetivo é atuar de forma estratégica dentro do ciclo de desenvolvimento, 
 
 ---
 
-## 🛠️ Ferramentas & Ecossistema
+## 🛠️ Ferramentas
 
 ### Gestão e Qualidade
 
@@ -145,7 +147,7 @@ Meu objetivo é atuar de forma estratégica dentro do ciclo de desenvolvimento, 
 📅 fev/2026 – nov/2026  
 📚 **Em andamento**
 
-Especialização voltada para **Testes de Software, Garantia da Qualidade, processos de qualidade e metodologias aplicadas ao desenvolvimento de software**.
+Especialização com foco em **Testes de Software, Garantia da Qualidade, processos de qualidade e metodologias aplicadas ao desenvolvimento de software**.
 
 ### Análise e Desenvolvimento de Sistemas
 
@@ -159,20 +161,6 @@ Especialização voltada para **Testes de Software, Garantia da Qualidade, proce
 ## 🏆 Certificações
 
 - **ISTQB® Certified Tester Foundation Level (CTFL)**
-- **ISTQB® Certified Tester Foundation Level — Agile Tester (CTFL-AT)**
-- **Scrum Fundamentals Certified (SFC™)**
-
-### Cursos & Formação Complementar
-
-- **QAzando — Automation Tests Bootcamp**
-  - Cypress
-  - Playwright
-  - API Automation
-- Automação de Testes com Cypress
-- Postman — Automação e Testes de APIs
-- SQL
-- Git & GitHub
-- Fundamentos de QA
 
 ---
 
@@ -180,11 +168,11 @@ Especialização voltada para **Testes de Software, Garantia da Qualidade, proce
 
 Atuação em projetos voltados para **plataformas digitais, programas de sócio-torcedor, ingressos, benefícios, experiências e relacionamento com torcedores**.
 
-Experiência com validação de funcionalidades críticas envolvendo:
+Experiência na validação de funcionalidades e integrações envolvendo:
 
 - Cadastro e atualização de dados
 - Autenticação e integrações
-- APIs e serviços backend
+- APIs e serviços Backend
 - Check-in
 - Benefícios e recompensas
 - Sistemas de pontuação
@@ -194,6 +182,7 @@ Experiência com validação de funcionalidades críticas envolvendo:
 - Regras de negócio
 - Jobs e processos automatizados
 - Persistência e consistência de dados
+- Validação de dados entre Frontend, API e Banco de Dados
 
 ### Plataformas
 
@@ -227,7 +216,7 @@ Experiência com validação de funcionalidades críticas envolvendo:
               ▼
          BANCO DE DADOS
               │
-         PostgreSQL / SQL
+        PostgreSQL / SQL
               │
               ▼
              CI/CD
