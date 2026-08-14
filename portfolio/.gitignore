@@ -1,0 +1,7 @@
+blob-report/
+dist/
+node_modules/
+playwright-report/
+qa-artifacts/
+test-results/
+*.tsbuildinfo
