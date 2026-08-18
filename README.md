@@ -6,9 +6,11 @@
 
 <div align="center">
 
-**[Abrir o portfólio ao vivo →](https://jvferrer.github.io/Portifolio_JoaoVitor/)**
+**[🚀 Abrir o portfólio ao vivo →](https://jvferrer.github.io/Portifolio_JoaoVitor/)**
 
-Analista de QA | Automação de Testes (Web e API) | Cypress · k6 | IA no ciclo de QA | ISTQB® CTFL
+**QA Engineer | Test Automation | API & Web Testing | Performance | AI for QA**
+
+Cypress · Playwright · Robot Framework · Selenium · k6 · Postman · SQL · LLM · MCP
 
 Santo André, SP · Brasil
 
@@ -17,7 +19,7 @@ Santo André, SP · Brasil
 <br/>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/stats-card.svg" width="850" alt="Mission Telemetry"/>
+  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/stats-card.svg" width="850" alt="QA Statistics"/>
 </div>
 
 <br/>
@@ -32,58 +34,212 @@ Santo André, SP · Brasil
   <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/projects-constellation.svg" width="850" alt="Featured QA Projects"/>
 </div>
 
-## Bio
+---
 
-Sou Analista de Testes/QA, com cerca de **6 anos** de atuação, foco em qualidade contínua e automação em aplicações Web, API e Mobile.
+# 🧪 About Me
 
-Tenho experiência com testes manuais e automatizados em **Cypress**, **Robot Framework** e **Selenium**, validação de dados com **SQL** e testes de performance com **k6** e **JMeter**. Conhecimento em **Playwright**.
+Sou **QA Engineer / Analista de Testes** com experiência em **Quality Assurance, testes manuais e automação**, atuando na validação de aplicações **Web, APIs e Mobile**.
 
-Atuo no planejamento de testes, modelagem de cenários, testes funcionais e exploratórios, regressão de fluxos críticos, validação de APIs e análise de causa raiz. Trabalho com **BDD**, **TDD**, **Shift Left**, Scrum e Kanban. Utilizo **IA generativa** no ciclo de QA e atuei com **agentes LLM** em jornada de CX. Conhecimento em **MCP**.
+Minha atuação envolve o ciclo completo de qualidade, desde o **entendimento de requisitos, análise de riscos e planejamento de testes**, até execução, automação, validação de dados, análise de resultados e investigação de bugs.
 
-**ISTQB® CTFL** (`26-CTFL-15087-BR`) · Pós-graduação em Testes de Software (Unyleya, em andamento) · ADS (Estácio).
+Tenho experiência com **testes funcionais, exploratórios, regressão, integração, APIs, banco de dados e performance**, buscando aplicar práticas de **Shift Left, BDD e Continuous Testing**.
 
-## Experiência
+Também venho direcionando minha evolução para a interseção entre **Quality Engineering e Inteligência Artificial**, explorando **IA generativa, LLMs, agentes de IA e MCP** aplicados ao ciclo de QA.
 
-- **Feng Brasil** — Analista de Testes de Software (Fev/2025 – atual) · Cypress, k6, Postman, PostgreSQL, Git/GitLab, IA generativa
-- **Spread Tecnologia · Vivo Sinfonia CX** — Arquiteto de Testes (Dez/2022 – Dez/2024) · Selenium, Octane, agentes LLM
-- **AchieveMore** — Analista de Testes de Software (Set/2020 – Nov/2021) · Postman, Swagger, MySQL, GitHub Actions
-- **Biz** — Analista de Testes de Software (Jul/2019 – Jul/2020) · Robot Framework (Python), Oracle, Jenkins, Azure DevOps
+---
 
-## Projetos
+# 🚀 QA & Quality Engineering
 
-Qualidade e automação em e-commerce e sócio-torcedor:
+### Testes
 
-- [Nação Flamengo](https://nacao.flamengo.com.br/)
-- [Sócio Torcedor SPFC](https://sociotorcedor.com.br/)
-- [Camisa 7 Botafogo](https://camisa7.botafogo.com.br/)
-- [Gigante Vasco](https://sociogigante.com/)
-- [Sócio Futebol Fluminense](https://sociofutebol.com.br/)
-- [Barcelona SC (Equador)](https://sociosbsc.com.ec/)
+- Testes Funcionais
+- Testes Exploratórios
+- Testes de Regressão
+- Smoke Testing
+- Testes de Integração
+- Testes de API
+- Testes Web
+- Testes Mobile
+- Testes de Aceitação
+- Testes de Performance
+- Validação de regras de negócio
+- Análise de causa raiz
+- Análise de riscos
+- Planejamento de testes
+- Estratégia de testes
 
-## Linguagens, ferramentas e práticas
+### Práticas
 
-- Linguagens: JavaScript, Python
-- Automação e performance: Cypress, k6, Robot Framework, Selenium, JMeter; Playwright (conhecimento)
-- API e dados: REST, Postman, Swagger, SQL, PostgreSQL, MySQL, Oracle, triggers e jobs
-- Práticas e gestão: Git, GitLab, GitHub Actions, Jenkins, Jira, Zephyr, Kanban, Scrum, Azure DevOps, Octane, BDD, TDD, Shift Left
-- IA no ciclo de QA: IA generativa, agentes LLM; MCP (conhecimento)
+- Shift Left Testing
+- Continuous Testing
+- BDD
+- TDD
+- Scrum
+- Kanban
+- Gherkin
+- Testes baseados em risco
 
-## Connect
+---
 
-<p align="center">
-  <a href="https://jvferrer.github.io/Portifolio_JoaoVitor/">
-    <img src="https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfólio">
-  </a>
-  <a href="https://www.linkedin.com/in/joao-vitor-ferrer-do-nascimento">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="https://profile.indeed.com/">
-    <img src="https://img.shields.io/badge/Indeed-003A9B?style=for-the-badge&logo=indeed&logoColor=white" alt="Indeed">
-  </a>
-  <a href="mailto:joao.21ferrer@gmail.com">
-    <img src="https://img.shields.io/badge/Email-404040?style=for-the-badge&logo=gmail&logoColor=red" alt="Email">
-  </a>
-  <a href="https://wa.me/5511940236678">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>
-</p>
+# 🤖 Test Automation
+
+Experiência com automação de testes utilizando:
+
+<div align="center">
+
+![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![Robot Framework](https://img.shields.io/badge/Robot%20Framework-000000?style=for-the-badge&logo=robotframework&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![Appium](https://img.shields.io/badge/Appium-66217A?style=for-the-badge&logo=appium&logoColor=white)
+
+</div>
+
+Principais conceitos:
+
+- E2E Testing
+- Page Object Model
+- BDD / Gherkin
+- Data-driven Testing
+- API Automation
+- Regression Automation
+- Test Suites
+- Reusable Components
+- Automated Smoke Tests
+
+---
+
+# 🔌 API & Backend Testing
+
+Atuação com validação de APIs REST e integrações:
+
+<div align="center">
+
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+![REST](https://img.shields.io/badge/REST%20API-005571?style=for-the-badge)
+
+</div>
+
+- REST APIs
+- HTTP Methods
+- Status Codes
+- Headers
+- Authentication
+- Tokens
+- JSON
+- Request / Response
+- API Contracts
+- Integration Testing
+- Collection Runner
+- API Automation
+
+---
+
+# 🗄️ Database & SQL
+
+Utilizo banco de dados como parte da estratégia de validação e investigação de problemas.
+
+<div align="center">
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+
+</div>
+
+Experiência com:
+
+- SQL
+- SELECT / JOIN / GROUP BY
+- Validação de registros
+- Investigação de inconsistências
+- Comparação de dados
+- Procedures
+- Functions
+- Triggers
+- Jobs
+- PL/SQL
+- Análise de integrações
+
+---
+
+# ⚡ Performance Testing
+
+Experiência e conhecimento em testes de performance utilizando:
+
+<div align="center">
+
+![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
+![JMeter](https://img.shields.io/badge/Apache%20JMeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white)
+
+</div>
+
+Conceitos:
+
+- Load Testing
+- Stress Testing
+- Performance Testing
+- Concurrent Users
+- Response Time
+- Throughput
+- Thresholds
+- Métricas de performance
+- Identificação de gargalos
+
+---
+
+# 🔄 CI/CD & Continuous Testing
+
+A automação de testes faz parte de uma estratégia de **Continuous Testing**, permitindo executar validações automaticamente durante o ciclo de entrega.
+
+<div align="center">
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
+![Azure DevOps](https://img.shields.io/badge/Azure%20DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)
+
+</div>
+
+### Pipeline de qualidade
+
+```text
+        Developer
+            │
+            ▼
+        Git Commit
+            │
+            ▼
+      Pull Request
+            │
+            ▼
+       CI Pipeline
+            │
+       ┌────┴────┐
+       ▼         ▼
+   Build/Test   Lint
+       │
+       ▼
+ Automated Tests
+       │
+   ┌───┴────┐
+   ▼        ▼
+  API      E2E
+ Tests    Tests
+   │        │
+   └───┬────┘
+       ▼
+  Test Results
+       │
+       ▼
+ Quality Gate
+       │
+   ┌───┴────┐
+   ▼        ▼
+  PASS     FAIL
+   │        │
+   ▼        ▼
+ Deploy    Feedback
