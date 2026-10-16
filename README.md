@@ -1,3 +1,4 @@
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/galaxy-header.svg" width="850" alt="João Vitor Ferrer — Portfólio QA"/>
 </div>
@@ -6,11 +7,11 @@
 
 <div align="center">
 
-**[🚀 Abrir o portfólio ao vivo →](https://jvferrer.github.io/Portifolio_JoaoVitor/)**
+**[Abrir o portfólio ao vivo →](https://jvferrer.github.io/Portifolio_JoaoVitor/)**
 
-**QA Engineer | Test Automation | API & Web Testing | Performance | AI for QA**
+**Analista de QA | Automação de Testes | Web & API | IA aplicada a QA**
 
-Cypress · Playwright · Robot Framework · Selenium · k6 · Postman · SQL · LLM · MCP
+Cypress · Playwright · Robot Framework · Selenium · k6 · Postman · SQL · LLMs · MCP
 
 Santo André, SP · Brasil
 
@@ -19,32 +20,34 @@ Santo André, SP · Brasil
 <br/>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/stats-card.svg" width="850" alt="QA Statistics"/>
+  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/stats-card.svg" width="850" alt="Estatísticas de QA"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/tech-stack.svg" width="850" alt="QA and Automation Stack"/>
+  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/tech-stack.svg" width="850" alt="Tecnologias de QA e automação"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/projects-constellation.svg" width="850" alt="Featured QA Projects"/>
+  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/projects-constellation.svg" width="850" alt="Projetos de QA em destaque"/>
 </div>
 
 ---
 
-# 🧪 About Me
+# 🧪 Sobre mim
 
-Sou **QA Engineer / Analista de Testes** com experiência em **Quality Assurance, testes manuais e automação**, atuando na validação de aplicações **Web, APIs e Mobile**.
+Sou **Analista de QA**, com atuação em Quality Assurance, testes manuais e automação, voltada à validação de aplicações Web, APIs e sistemas Mobile.
 
-Minha atuação envolve o ciclo completo de qualidade, desde o **entendimento de requisitos, análise de riscos e planejamento de testes**, até execução, automação, validação de dados, análise de resultados e investigação de bugs.
+Minha atuação envolve o ciclo de qualidade de software, desde o entendimento dos requisitos, análise de riscos e planejamento de testes até a execução, automação, validação de dados e investigação de bugs.
 
-Tenho experiência com **testes funcionais, exploratórios, regressão, integração, APIs, banco de dados e performance**, buscando aplicar práticas de **Shift Left, BDD e Continuous Testing**.
+Tenho experiência com testes funcionais, exploratórios, regressivos, de integração e de API, além de validações de regras de negócio e banco de dados.
 
-Também venho direcionando minha evolução para a interseção entre **Quality Engineering e Inteligência Artificial**, explorando **IA generativa, LLMs, agentes de IA e MCP** aplicados ao ciclo de QA.
+Também direciono minha evolução profissional para a interseção entre **Quality Engineering e Inteligência Artificial**, explorando IA generativa, LLMs, agentes de IA e MCP aplicados ao ciclo de QA.
+
+Sou certificado **ISTQB® CTFL 4.0** e busco aprimorar continuamente minhas práticas de qualidade, automação e prevenção de defeitos.
 
 ---
 
@@ -52,38 +55,30 @@ Também venho direcionando minha evolução para a interseção entre **Quality 
 
 ### Testes
 
-- Testes Funcionais
-- Testes Exploratórios
-- Testes de Regressão
-- Smoke Testing
-- Testes de Integração
-- Testes de API
-- Testes Web
-- Testes Mobile
-- Testes de Aceitação
-- Testes de Performance
+- Testes funcionais e exploratórios
+- Testes de regressão e smoke testing
+- Testes de integração e API
+- Testes Web e Mobile
+- Testes de aceitação
 - Validação de regras de negócio
-- Análise de causa raiz
-- Análise de riscos
-- Planejamento de testes
-- Estratégia de testes
+- Análise de riscos e causa raiz
+- Planejamento e estratégia de testes
+- Validação de dados e integrações
 
-### Práticas
+### Práticas e metodologias
 
 - Shift Left Testing
 - Continuous Testing
-- BDD
-- TDD
-- Scrum
-- Kanban
-- Gherkin
+- BDD e Gherkin
+- Fundamentos de TDD
 - Testes baseados em risco
+- Scrum e Kanban
 
 ---
 
 # 🤖 Test Automation
 
-Experiência com automação de testes utilizando:
+Ferramentas utilizadas no contexto de automação de testes:
 
 <div align="center">
 
@@ -95,50 +90,46 @@ Experiência com automação de testes utilizando:
 
 </div>
 
-Principais conceitos:
+### Principais conceitos
 
-- E2E Testing
-- Page Object Model
+- End-to-End (E2E) Testing
+- Page Object Model (POM)
 - BDD / Gherkin
 - Data-driven Testing
-- API Automation
+- API Test Automation
 - Regression Automation
-- Test Suites
-- Reusable Components
+- Organização de suítes de teste
+- Componentes reutilizáveis
 - Automated Smoke Tests
 
 ---
 
 # 🔌 API & Backend Testing
 
-Atuação com validação de APIs REST e integrações:
+Validação de APIs REST, contratos, integrações e regras de negócio.
 
 <div align="center">
 
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
-![REST](https://img.shields.io/badge/REST%20API-005571?style=for-the-badge)
+![REST API](https://img.shields.io/badge/REST%20API-005571?style=for-the-badge)
 
 </div>
 
-- REST APIs
-- HTTP Methods
-- Status Codes
-- Headers
-- Authentication
-- Tokens
-- JSON
-- Request / Response
-- API Contracts
-- Integration Testing
-- Collection Runner
-- API Automation
+- Métodos HTTP e códigos de status
+- Headers, autenticação e tokens
+- Validação de requisições e respostas JSON
+- Contratos de API
+- Testes de integração
+- Collections e Collection Runner
+- Automação de testes de API
+- Investigação de erros e inconsistências
 
 ---
 
 # 🗄️ Database & SQL
 
-Utilizo banco de dados como parte da estratégia de validação e investigação de problemas.
+Utilizo bancos de dados como parte da estratégia de validação e investigação de problemas.
 
 <div align="center">
 
@@ -149,50 +140,44 @@ Utilizo banco de dados como parte da estratégia de validação e investigação
 
 </div>
 
-Experiência com:
+### Conhecimentos
 
-- SQL
-- SELECT / JOIN / GROUP BY
-- Validação de registros
+- SQL: SELECT, JOIN, GROUP BY e filtros
+- Validação e comparação de registros
 - Investigação de inconsistências
-- Comparação de dados
-- Procedures
-- Functions
-- Triggers
-- Jobs
-- PL/SQL
-- Análise de integrações
+- Análise de procedures, functions e triggers
+- Verificação de jobs e rotinas de banco de dados
+- Noções de PL/SQL
+- Análise de integrações e persistência de dados
 
 ---
 
 # ⚡ Performance Testing
 
-Experiência e conhecimento em testes de performance utilizando:
+Estudo e aplicação de conceitos de testes de performance e análise de comportamento de aplicações sob carga.
 
 <div align="center">
 
 ![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
-![JMeter](https://img.shields.io/badge/Apache%20JMeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white)
+![Apache JMeter](https://img.shields.io/badge/Apache%20JMeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white)
 
 </div>
 
-Conceitos:
+### Conceitos
 
 - Load Testing
 - Stress Testing
-- Performance Testing
-- Concurrent Users
-- Response Time
+- Tempo de resposta
 - Throughput
-- Thresholds
-- Métricas de performance
-- Identificação de gargalos
+- Usuários virtuais e concorrência
+- Thresholds e métricas de performance
+- Identificação de possíveis gargalos
 
 ---
 
 # 🔄 CI/CD & Continuous Testing
 
-A automação de testes faz parte de uma estratégia de **Continuous Testing**, permitindo executar validações automaticamente durante o ciclo de entrega.
+A automação pode integrar o pipeline de entrega para antecipar a identificação de defeitos e fornecer feedback contínuo sobre a qualidade do software.
 
 <div align="center">
 
@@ -204,42 +189,87 @@ A automação de testes faz parte de uma estratégia de **Continuous Testing**, 
 
 </div>
 
-### Pipeline de qualidade
+### Exemplo de pipeline de qualidade
 
 ```text
         Developer
-            │
-            ▼
+            |
+            v
         Git Commit
-            │
-            ▼
+            |
+            v
       Pull Request
-            │
-            ▼
+            |
+            v
        CI Pipeline
-            │
-       ┌────┴────┐
-       ▼         ▼
-   Build/Test   Lint
-       │
-       ▼
- Automated Tests
-       │
-   ┌───┴────┐
-   ▼        ▼
-  API      E2E
- Tests    Tests
-   │        │
-   └───┬────┘
-       ▼
+            |
+       +----+----+
+       |         |
+       v         v
+     Build      Lint
+       |
+       v
+  Automated Tests
+       |
+   +---+---+
+   |       |
+   v       v
+  API     E2E
+ Tests   Tests
+   |       |
+   +---+---+
+       |
+       v
   Test Results
-       │
-       ▼
- Quality Gate
-       │
-   ┌───┴────┐
-   ▼        ▼
-  PASS     FAIL
-   │        │
-   ▼        ▼
- Deploy    Feedback
+       |
+       v
+   Quality Gate
+       |
+   +---+---+
+   |       |
+   v       v
+  PASS    FAIL
+   |       |
+   v       v
+ Deploy  Feedback
+```
+
+---
+
+# 🤖 Inteligência Artificial aplicada a QA
+
+Exploro possibilidades de uso de IA para apoiar atividades de qualidade de software, aumentar a produtividade e aprimorar processos de investigação.
+
+- IA generativa aplicada ao ciclo de QA
+- Apoio à elaboração e revisão de cenários de teste
+- LLMs e agentes de IA
+- Model Context Protocol (MCP)
+- Exploração de automação assistida por IA
+- Apoio à análise de requisitos, logs e investigação de bugs
+
+---
+
+# 🛠️ Ferramentas e colaboração
+
+- **Gestão de testes e demandas:** Jira e ferramentas de gestão de QA
+- **Versionamento:** Git e GitHub
+- **Documentação de APIs:** Postman e Swagger
+- **Banco de dados:** SQL e PostgreSQL
+- **Metodologias:** Scrum e Kanban
+
+---
+
+# 🎓 Certificações
+
+- **ISTQB® Certified Tester Foundation Level (CTFL 4.0)**
+
+---
+
+# 📫 Contato
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-Jvferrer-181717?style=for-the-badge&logo=github)](https://github.com/Jvferrer)
+[![Portfólio](https://img.shields.io/badge/Portfólio-Acessar-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jvferrer.github.io/Portifolio_JoaoVitor/)
+
+</div>
