@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/galaxy-header.svg" width="850" alt="João Vitor Ferrer — Portfólio QA"/>
 </div>
@@ -191,45 +190,9 @@ A automação pode integrar o pipeline de entrega para antecipar a identificaç�
 
 ### Pipeline de qualidade — Galaxy QA
 
-```mermaid
-flowchart TD
-    A["Developer"] --> B["Git Commit"]
-    B --> C["Pull Request"]
-    C --> D["CI Pipeline"]
-
-    D --> E["Build"]
-    D --> F["Lint"]
-
-    E --> G["Automated Tests"]
-    F --> G
-
-    G --> H["API Tests"]
-    G --> I["E2E Tests"]
-
-    H --> J["Test Results"]
-    I --> J
-
-    J --> K{"Quality Gate"}
-
-    K -->|PASS| L["Deploy"]
-    K -->|FAIL| M["Feedback & Fixes"]
-
-    M --> B
-
-    classDef space fill:#17102f,stroke:#8b5cf6,color:#ffffff,stroke-width:2px
-    classDef testing fill:#101d3a,stroke:#38bdf8,color:#ffffff,stroke-width:2px
-    classDef decision fill:#312e81,stroke:#c4b5fd,color:#ffffff,stroke-width:2px
-    classDef success fill:#12372a,stroke:#34d399,color:#ffffff,stroke-width:2px
-    classDef failure fill:#451a2b,stroke:#fb7185,color:#ffffff,stroke-width:2px
-
-    class A,B,C,D,E,F space
-    class G,H,I,J testing
-    class K decision
-    class L success
-    class M failure
-
-    linkStyle default stroke:#8b5cf6,stroke-width:2px
-```
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Jvferrer/Jvferrer/main/assets/generated/galaxy-pipeline.svg" width="850" alt="Galaxy QA Pipeline"/>
+</div>
 
 ---
 
