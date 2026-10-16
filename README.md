@@ -7,7 +7,7 @@
 
 <div align="center">
 
-**[Abrir o portfólio ao vivo →](https://jvferrer.github.io/Portifolio_JoaoVitor/)**
+**[🚀 Abrir o portfólio ao vivo →](https://jvferrer.github.io/Portifolio_JoaoVitor/)**
 
 **Analista de QA | Automação de Testes | Web & API | IA aplicada a QA**
 
@@ -154,7 +154,7 @@ Utilizo bancos de dados como parte da estratégia de validação e investigaçã
 
 # ⚡ Performance Testing
 
-Estudo e aplicação de conceitos de testes de performance e análise de comportamento de aplicações sob carga.
+Conhecimentos em conceitos de testes de performance e análise do comportamento de aplicações sob carga.
 
 <div align="center">
 
@@ -189,49 +189,46 @@ A automação pode integrar o pipeline de entrega para antecipar a identificaç�
 
 </div>
 
-### Exemplo de pipeline de qualidade
+### Pipeline de qualidade — Galaxy QA
 
-```text
-        Developer
-            |
-            v
-        Git Commit
-            |
-            v
-      Pull Request
-            |
-            v
-       CI Pipeline
-            |
-       +----+----+
-       |         |
-       v         v
-     Build      Lint
-       |
-       v
-  Automated Tests
-       |
-   +---+---+
-   |       |
-   v       v
-  API     E2E
- Tests   Tests
-   |       |
-   +---+---+
-       |
-       v
-  Test Results
-       |
-       v
-   Quality Gate
-       |
-   +---+---+
-   |       |
-   v       v
-  PASS    FAIL
-   |       |
-   v       v
- Deploy  Feedback
+```mermaid
+flowchart TD
+    A["Developer"] --> B["Git Commit"]
+    B --> C["Pull Request"]
+    C --> D["CI Pipeline"]
+
+    D --> E["Build"]
+    D --> F["Lint"]
+
+    E --> G["Automated Tests"]
+    F --> G
+
+    G --> H["API Tests"]
+    G --> I["E2E Tests"]
+
+    H --> J["Test Results"]
+    I --> J
+
+    J --> K{"Quality Gate"}
+
+    K -->|PASS| L["Deploy"]
+    K -->|FAIL| M["Feedback & Fixes"]
+
+    M --> B
+
+    classDef space fill:#17102f,stroke:#8b5cf6,color:#ffffff,stroke-width:2px
+    classDef testing fill:#101d3a,stroke:#38bdf8,color:#ffffff,stroke-width:2px
+    classDef decision fill:#312e81,stroke:#c4b5fd,color:#ffffff,stroke-width:2px
+    classDef success fill:#12372a,stroke:#34d399,color:#ffffff,stroke-width:2px
+    classDef failure fill:#451a2b,stroke:#fb7185,color:#ffffff,stroke-width:2px
+
+    class A,B,C,D,E,F space
+    class G,H,I,J testing
+    class K decision
+    class L success
+    class M failure
+
+    linkStyle default stroke:#8b5cf6,stroke-width:2px
 ```
 
 ---
@@ -252,7 +249,7 @@ Exploro possibilidades de uso de IA para apoiar atividades de qualidade de softw
 # 🛠️ Ferramentas e colaboração
 
 - **Gestão de testes e demandas:** Jira e ferramentas de gestão de QA
-- **Versionamento:** Git e GitHub
+- **Versionamento:** Git, GitHub e GitLab
 - **Documentação de APIs:** Postman e Swagger
 - **Banco de dados:** SQL e PostgreSQL
 - **Metodologias:** Scrum e Kanban
@@ -270,6 +267,7 @@ Exploro possibilidades de uso de IA para apoiar atividades de qualidade de softw
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-Jvferrer-181717?style=for-the-badge&logo=github)](https://github.com/Jvferrer)
+
 [![Portfólio](https://img.shields.io/badge/Portfólio-Acessar-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jvferrer.github.io/Portifolio_JoaoVitor/)
 
 </div>
