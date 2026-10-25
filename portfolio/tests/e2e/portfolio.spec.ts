@@ -167,7 +167,6 @@ test.describe("Portfólio QA — estilo autor", () => {
     const documents = [
       { name: "Onboarding de QA", file: "onboarding-de-qa.html" },
       { name: "Automação de QA", file: "automacao-de-qa.html" },
-      { name: "Manual de Automação", file: "manual-de-automacao.html" },
     ] as const;
 
     await expect(panel.getByRole("link")).toHaveCount(documents.length);

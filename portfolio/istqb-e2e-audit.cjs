@@ -103,7 +103,7 @@ async function run() {
     results.push(test("Sete produtos", await page.locator(".project-link").count() === 7, "clubes públicos"));
 
     await page.getByRole("tab", { name: "Documentos" }).click();
-    results.push(test("Três documentos", await page.locator(".project-link").count() === 3, "onboarding, automação e manual"));
+    results.push(test("Dois documentos", await page.locator(".project-link").count() === 2, "onboarding e automação"));
     const docHref = await page.getByRole("link", { name: /Onboarding de QA/i }).getAttribute("href");
     const docResponse = await page.request.get(new URL(docHref, page.url()).toString());
     const docBody = await docResponse.text();

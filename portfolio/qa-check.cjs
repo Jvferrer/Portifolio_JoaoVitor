@@ -49,10 +49,10 @@ check("Cargo no perfil", /Analista de Testes\/QA Sênior/.test(source.data) && !
 check("SEO social", /rel="canonical"/.test(source.html) && /og:image/.test(source.html) && /Analista de Testes\/QA Sênior/.test(source.html), "canonical, og:image e cargo");
 check("Contraste de CTA", /--accent-fill: #166534/.test(source.css) && /:focus-visible/.test(source.css), "botão AA e foco visível");
 check("Links externos", /noopener noreferrer/.test(source.app), "noopener nos target=_blank");
-const docNames = ["onboarding-de-qa.html", "automacao-de-qa.html", "manual-de-automacao.html"];
+const docNames = ["onboarding-de-qa.html", "automacao-de-qa.html"];
 const docPaths = docNames.map((name) => path.join(root, "public", "docs", name));
 const docText = docPaths.filter(fs.existsSync).map((filePath) => fs.readFileSync(filePath, "utf8")).join("\n");
-check("Docs de QA", docPaths.every(fs.existsSync) && /Onboarding de QA/.test(source.data) && /Manual de Automação/.test(source.data), "três HTML em public/docs");
+check("Docs de QA", docPaths.every(fs.existsSync) && /Onboarding de QA/.test(source.data) && /Automação de QA/.test(source.data) && !/Manual de Automação/.test(source.data), "dois HTML em public/docs");
 check("Docs sem infra interna", docText.length > 0 && !/feng\.rocks|Feng-Brasil\/feng-xt|feng-tech|dev_xt/.test(docText), "sem URL de homologação, repo privado ou config de segredo");
 check(
   "Ícone dos documentos",

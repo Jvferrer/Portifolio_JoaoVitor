@@ -271,13 +271,6 @@ export const portfolio = {
       href: `${import.meta.env.BASE_URL}docs/automacao-de-qa.html`,
       cta: "Abrir documento",
     },
-    {
-      name: "Manual de Automação",
-      kind: "Playwright · v1.0",
-      description: "Passo a passo da automação: ambiente, estrutura do projeto e pipeline.",
-      href: `${import.meta.env.BASE_URL}docs/manual-de-automacao.html`,
-      cta: "Abrir documento",
-    },
   ] satisfies PortfolioDoc[],
 } as const;
 
