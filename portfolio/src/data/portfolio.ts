@@ -231,6 +231,8 @@ export const portfolio = {
       institution: "Estácio",
       period: "2023 — 2025",
       detail: "Concluído",
+      file: `${import.meta.env.BASE_URL}assets/certificados/bacharelado-ads.pdf`,
+      downloadName: "Bacharelado_ADS_Joao_Vitor_Ferrer.pdf",
     },
     {
       title: "Especialização em Testes de Software",

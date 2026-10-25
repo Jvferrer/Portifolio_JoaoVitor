@@ -56,8 +56,8 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.locator(".cred-meta").filter({ hasText: /26-CTFL-15087-BR/i })).toBeVisible();
     await expect(page.getByText(/Bacharelado em ADS/i)).toBeVisible();
     await expect(page.getByText(/Unyleya/i).first()).toBeVisible();
-    await expect(page.getByRole("link", { name: "Baixar certificado" })).toHaveCount(2);
-    await expect(page.locator("article").filter({ hasText: "Bacharelado em ADS" }).getByRole("link")).toHaveCount(0);
+    await expect(page.getByRole("link", { name: "Baixar certificado" })).toHaveCount(3);
+    await expect(page.locator("article").filter({ hasText: "Bacharelado em ADS" }).getByRole("link", { name: "Baixar certificado" })).toBeVisible();
     await expect(page.locator("article").filter({ hasText: "Unyleya" }).getByRole("link")).toHaveCount(0);
   });
 
@@ -108,12 +108,15 @@ test.describe("Portfólio QA — estilo autor", () => {
 
     await page.getByRole("tab", { name: "Certificações" }).click();
     const certificates = page.getByRole("link", { name: "Baixar certificado" });
-    await expect(certificates).toHaveCount(2);
+    await expect(certificates).toHaveCount(3);
+    const ads = page.locator("article").filter({ hasText: "Bacharelado em ADS" }).getByRole("link", { name: "Baixar certificado" });
+    await expect(ads).toHaveAttribute("href", /bacharelado-ads\.pdf$/);
     for (const link of await certificates.all()) {
       const href = await link.getAttribute("href");
       const file = await request.get(new URL(href!, page.url()).toString());
       expect(file.status()).toBe(200);
-      expect(file.headers()["content-type"]).toContain("image/jpeg");
+      const type = file.headers()["content-type"] ?? "";
+      expect(type.includes("image/jpeg") || type.includes("application/pdf")).toBe(true);
     }
   });
 
