@@ -36,6 +36,10 @@ test.describe("Portfólio QA — estilo autor", () => {
 
     await page.getByRole("tab", { name: "Experiência" }).click();
     await expect(page.getByRole("heading", { name: /Trajetória profissional/i })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Analista de Testes Sênior" })).toBeVisible();
+    await expect(page.locator(".company").filter({ hasText: "Stefanini Brasil" })).toBeVisible();
+    await expect(page.getByText("Jul/2020 — atual")).toBeVisible();
+    await expect(page.getByText(/GEDAVE, junto à PRODESP/i)).toBeVisible();
     await expect(page.getByRole("heading", { name: /Analista de Testes de Software/i }).first()).toBeVisible();
     await expect(page.locator(".company").filter({ hasText: /Feng Brasil/i })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Analista de teste/QA" })).toBeVisible();

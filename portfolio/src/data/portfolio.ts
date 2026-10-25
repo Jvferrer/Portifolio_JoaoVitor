@@ -96,6 +96,17 @@ export const portfolio = {
   skills: skillGroups.flatMap((group) => [...group.items]),
   experience: [
     {
+      period: "Jul/2020 — atual",
+      role: "Analista de Testes Sênior",
+      company: "Stefanini Brasil",
+      summary: "São Paulo e Região · Tempo integral",
+      activities: [
+        "Implantação e manutenção no sistema de Internet da SAA – Secretaria de Agricultura e Abastecimento – GEDAVE, junto à PRODESP.",
+      ],
+      results: [],
+      stack: [],
+    },
+    {
       period: "Fev/2025 — Out/2026",
       role: "Analista de teste/QA",
       company: "Feng Brasil · Autônomo",

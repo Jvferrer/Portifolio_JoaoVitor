@@ -125,7 +125,7 @@ function ExperiencePanel() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <p className="stack-line">{job.stack.join(" · ")}</p>
+            {job.stack.length > 0 ? <p className="stack-line">{job.stack.join(" · ")}</p> : null}
           </article>
         ))}
       </div>
