@@ -43,7 +43,7 @@ export const siteUrl = "https://jvferrer.github.io/Portifolio_JoaoVitor/";
 export const skillGroups = [
   {
     title: "Linguagens",
-    items: ["HTML atualizado", "CSS atualizado", "JavaScript", "TypeScript", "Python"],
+    items: ["HTML Living Standard", "CSS 2026", "JavaScript", "TypeScript", "Python"],
   },
   {
     title: "Automação e performance",
