@@ -27,6 +27,11 @@ const all = Object.values(source).join("\n");
 check("Arquivos essenciais", Object.values(files).every(fs.existsSync), "app, dados, estilos e assets");
 check("Layout sidebar + abas", /sidebar/.test(source.app) && /role="tablist"/.test(source.app), "perfil lateral e tabs");
 check("Abas principais", ["Skills", "Experiência", "Projetos", "Certificações", "Documentos"].every((t) => source.app.includes(t)), "cinco abas");
+check(
+  "Ordem das abas",
+  /label: "Experiência"[\s\S]*label: "Projetos"[\s\S]*label: "Certificações"[\s\S]*label: "Documentos"[\s\S]*label: "Skills"/.test(source.app),
+  "experiência primeiro e skills por último",
+);
 check("Tabs ARIA", /aria-controls=\{`panel-\$\{item\.id\}`\}/.test(source.app) && /aria-labelledby=\{`tab-\$\{tab\}`\}/.test(source.app), "controls e labelledby");
 check("Credenciais", /ISTQB® Foundation Level 4\.0/.test(source.data) && /Estácio/.test(source.data) && /Unyleya/.test(source.data) && /26-CTFL-15087-BR/.test(source.data), "ISTQB, ADS e pós");
 check("Download de certificados", /Baixar certificado/.test(source.app) && /assets\/certificados\/istqb-ctfl\.jpg/.test(source.data) && /assets\/certificados\/scrum-fundamentals\.jpg/.test(source.data) && /assets\/certificados\/bacharelado-ads\.pdf/.test(source.data), "CTFL, Scrum e ADS com arquivo");

@@ -81,7 +81,7 @@ async function run() {
         "Imagem carregada sem quebra",
       ),
     );
-    results.push(test("Cinco abas", await page.getByRole("tab").count() === 5, "Skills, Experiência, Projetos, Certificações, Documentos"));
+    results.push(test("Cinco abas", await page.getByRole("tab").count() === 5, "Experiência, Projetos, Certificações, Documentos, Skills"));
     results.push(
       test(
         "Tab Skills com ARIA",

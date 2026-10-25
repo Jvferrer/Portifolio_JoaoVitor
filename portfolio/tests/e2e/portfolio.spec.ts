@@ -18,9 +18,18 @@ test.describe("Portfólio QA — estilo autor", () => {
   test("abas Skills, Experiência, Projetos e Certificações", async ({ page }) => {
     await page.goto("./");
 
+    await expect(page.getByRole("tab")).toHaveText([
+      "Experiência",
+      "Projetos",
+      "Certificações",
+      "Documentos",
+      "Skills",
+    ]);
+    await expect(page.getByRole("tab", { name: "Experiência" })).toHaveAttribute("aria-selected", "true");
+    await expect(page.getByRole("tabpanel")).toHaveAttribute("aria-labelledby", "tab-experiencia");
+
     const skillsTab = page.getByRole("tab", { name: "Skills" });
     await expect(skillsTab).toHaveAttribute("aria-controls", "panel-skills");
-    await expect(page.getByRole("tabpanel")).toHaveAttribute("aria-labelledby", "tab-skills");
 
     await skillsTab.click();
     await expect(page.getByRole("heading", { name: /Especialidades/i })).toBeVisible();
@@ -68,10 +77,13 @@ test.describe("Portfólio QA — estilo autor", () => {
 
   test("navegação por teclado nas abas", async ({ page }) => {
     await page.goto("./");
+    await page.getByRole("tab", { name: "Experiência" }).focus();
+    await page.keyboard.press("ArrowRight");
+    await expect(page.getByRole("tab", { name: "Projetos" })).toBeFocused();
+    await expect(page.getByRole("heading", { name: /Projetos em destaque/i })).toBeVisible();
     await page.getByRole("tab", { name: "Skills" }).focus();
     await page.keyboard.press("ArrowRight");
     await expect(page.getByRole("tab", { name: "Experiência" })).toBeFocused();
-    await expect(page.getByRole("heading", { name: /Trajetória profissional/i })).toBeVisible();
   });
 
   test("tipografia Sora + Figtree", async ({ page }) => {

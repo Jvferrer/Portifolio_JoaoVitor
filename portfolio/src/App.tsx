@@ -2,11 +2,11 @@ import { useEffect, useId, useState, type KeyboardEvent } from "react";
 import { portfolio, type TabId } from "./data/portfolio";
 
 const tabs: { id: TabId; label: string }[] = [
-  { id: "skills", label: "Skills" },
   { id: "experiencia", label: "Experiência" },
   { id: "projetos", label: "Projetos" },
   { id: "certificacoes", label: "Certificações" },
   { id: "documentos", label: "Documentos" },
+  { id: "skills", label: "Skills" },
 ];
 
 const externalRel = "noopener noreferrer";
@@ -204,7 +204,7 @@ function CredentialsPanel() {
 }
 
 function App() {
-  const [tab, setTab] = useState<TabId>("skills");
+  const [tab, setTab] = useState<TabId>("experiencia");
   const [menuOpen, setMenuOpen] = useState(false);
   const menuId = useId();
   const { profile } = portfolio;
