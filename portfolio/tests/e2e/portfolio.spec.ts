@@ -34,6 +34,13 @@ test.describe("Portfólio QA — estilo autor", () => {
     await skillsTab.click();
     await expect(page.getByRole("heading", { name: /Especialidades/i })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Linguagens" })).toBeVisible();
+    await expect(page.locator(".skill-group", { hasText: "Linguagens" }).locator("li")).toHaveText([
+      "HTML atualizado",
+      "CSS atualizado",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+    ]);
     await expect(page.getByRole("heading", { name: "Automação e performance" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "API e dados" })).toBeVisible();
     await expect(page.getByText("Playwright (conhecimento)")).toBeVisible();
@@ -41,7 +48,6 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.getByText("MCP (conhecimento)")).toBeVisible();
     await expect(page.getByText("Agentes LLM", { exact: true })).toBeVisible();
     await expect(page.getByText("Cypress", { exact: true })).toBeVisible();
-    await expect(page.getByText("JavaScript", { exact: true })).toBeVisible();
 
     await page.getByRole("tab", { name: "Experiência" }).click();
     await expect(page.getByRole("heading", { name: /Trajetória profissional/i })).toBeVisible();
