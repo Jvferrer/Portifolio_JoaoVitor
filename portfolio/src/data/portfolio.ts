@@ -47,7 +47,7 @@ export const skillGroups = [
   },
   {
     title: "Automação e performance",
-    items: ["Cypress", "k6", "Robot Framework", "Selenium", "Playwright (conhecimento)", "JMeter"],
+    items: ["Cypress", "k6", "Robot Framework", "Selenium", "Playwright", "JMeter"],
   },
   {
     title: "API e dados",
@@ -79,7 +79,7 @@ export const portfolio = {
     location: "Santo André, SP · Brasil",
     summary: [
       "Sou Analista de Testes/QA Sênior, com cerca de 6 anos de atuação, foco em qualidade contínua e automação em aplicações Web, API e Mobile.",
-      "Tenho experiência com testes manuais e automatizados em Cypress, Robot Framework e Selenium, validação de dados com SQL e testes de performance com k6 e JMeter. Conhecimento em Playwright.",
+      "Tenho experiência com testes manuais e automatizados em Cypress, Robot Framework, Selenium e Playwright, validação de dados com SQL e testes de performance com k6 e JMeter.",
       "Utilizo IA generativa para apoiar o planejamento de testes, criação de cenários, documentação e investigação de defeitos, e atuei com agentes LLM em jornada de CX. Conhecimento em MCP. ISTQB® CTFL (26-CTFL-15087-BR) e pós-graduando em Testes de Software.",
     ],
     photo: `${import.meta.env.BASE_URL}assets/joao-vitor-ferrer.jpg`,

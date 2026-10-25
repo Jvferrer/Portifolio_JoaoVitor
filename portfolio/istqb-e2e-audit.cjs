@@ -92,7 +92,7 @@ async function run() {
 
     await page.getByRole("tab", { name: "Skills" }).click();
     results.push(test("Skills agrupadas", await page.getByRole("heading", { name: "Linguagens" }).isVisible(), "grupo Linguagens visível"));
-    results.push(test("Playwright como conhecimento", await page.getByText("Playwright (conhecimento)").isVisible(), "sem inflar stack"));
+    results.push(test("Playwright na stack", await page.getByText("Playwright", { exact: true }).isVisible() && !(await page.getByText("Playwright (conhecimento)").isVisible()), "sem o rótulo de conhecimento"));
     results.push(test("MCP como conhecimento", await page.getByText("MCP (conhecimento)").isVisible(), "MCP sem vender como entrega"));
 
     await page.getByRole("tab", { name: "Experiência" }).click();

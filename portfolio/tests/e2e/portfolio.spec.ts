@@ -43,7 +43,7 @@ test.describe("Portfólio QA — estilo autor", () => {
     ]);
     await expect(page.getByRole("heading", { name: "Automação e performance" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "API e dados" })).toBeVisible();
-    await expect(page.getByText("Playwright (conhecimento)")).toBeVisible();
+    await expect(page.getByText("Playwright", { exact: true })).toBeVisible();
     await expect(page.getByRole("heading", { name: "IA no ciclo de QA" })).toBeVisible();
     await expect(page.getByText("MCP (conhecimento)")).toBeVisible();
     await expect(page.getByText("Agentes LLM", { exact: true })).toBeVisible();
