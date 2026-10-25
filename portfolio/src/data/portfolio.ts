@@ -96,7 +96,7 @@ export const portfolio = {
   skills: skillGroups.flatMap((group) => [...group.items]),
   experience: [
     {
-      period: "Jul/2020 — atual",
+      period: "Out/2026 — atual",
       role: "Analista de Testes Sênior",
       company: "Stefanini Brasil",
       summary: "São Paulo e Região · Tempo integral",
