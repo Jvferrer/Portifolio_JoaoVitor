@@ -63,7 +63,7 @@ async function run() {
     await page.goto(url, { waitUntil: "networkidle" });
     await page.screenshot({ path: path.join(artifacts, "desktop-home.png"), fullPage: true });
 
-    results.push(test("Página carrega", (await page.title()) === "João Vitor Ferrer | Analista de QA Sênior", `Título: ${await page.title()}`));
+    results.push(test("Página carrega", (await page.title()) === "João Vitor Ferrer | Analista de Testes/QA Sênior", `Título: ${await page.title()}`));
     results.push(test("Idioma pt-BR", await page.locator("html").getAttribute("lang") === "pt-BR", "lang no documento"));
     results.push(test("Skip link presente", await page.getByRole("link", { name: /Pular para o conteúdo/i }).count() === 1, "acesso por teclado"));
     results.push(test("H1 é o nome", (await page.locator("h1").innerText()) === "João Vitor Ferrer", "heading principal"));

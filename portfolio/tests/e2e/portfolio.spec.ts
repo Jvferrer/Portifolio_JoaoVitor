@@ -5,7 +5,7 @@ test.describe("Portfólio QA — estilo autor", () => {
     await page.goto("./");
     await expect(page).toHaveTitle(/João Vitor Ferrer/);
     await expect(page.locator(".name")).toHaveText(/João Vitor Ferrer/);
-    await expect(page.getByText("Analista de QA Sênior").first()).toBeVisible();
+    await expect(page.getByText("Analista de Testes/QA Sênior").first()).toBeVisible();
     await expect(page.locator(".headline")).toHaveCount(0);
     await expect(page.locator(".location")).toHaveText("Santo André, SP · Brasil");
     await expect(page.getByRole("img", { name: /Foto de João Vitor Ferrer/i })).toBeVisible();

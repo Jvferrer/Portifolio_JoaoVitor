@@ -75,7 +75,7 @@ export const skillGroups = [
 export const portfolio = {
   profile: {
     name: "João Vitor Ferrer",
-    role: "Analista de QA Sênior",
+    role: "Analista de Testes/QA Sênior",
     location: "Santo André, SP · Brasil",
     summary: [
       "Sou Analista de Testes/QA Sênior, com cerca de 6 anos de atuação, foco em qualidade contínua e automação em aplicações Web, API e Mobile.",
