@@ -107,8 +107,9 @@ async function run() {
     const docHref = await page.getByRole("link", { name: /Onboarding de QA/i }).getAttribute("href");
     const docResponse = await page.request.get(new URL(docHref, page.url()).toString());
     const docBody = await docResponse.text();
-    results.push(test("Onboarding publicado", docResponse.status() === 200 && /Onboarding de QA/.test(docBody), "HTML separado responde 200"));
-    results.push(test("Sem URL interna no doc", !/feng\.rocks|Feng-Brasil\/feng-xt|dev_xt/.test(docBody), "homologação e repo privado fora do HTML"));
+    const docH1 = docBody.match(/<h1>([^<]*)<\/h1>/i)?.[1]?.trim() ?? "";
+    results.push(test("Onboarding publicado", docResponse.status() === 200 && /onboarding-de-qa\.html$/.test(docResponse.url()) && docH1 === "Onboarding de QA", "HTML separado responde 200"));
+    results.push(test("Sem URL interna no doc", !/feng\.rocks|feng-brasil\/feng-xt|dev_xt/i.test(docBody), "homologação e repo privado fora do HTML"));
 
     await page.getByRole("tab", { name: "Certificações" }).click();
     results.push(test("ISTQB 4.0 com ID", await page.locator(".cred-meta").filter({ hasText: /26-CTFL-15087-BR/ }).isVisible(), "credencial visível"));

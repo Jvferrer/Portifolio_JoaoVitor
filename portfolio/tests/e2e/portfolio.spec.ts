@@ -103,21 +103,38 @@ test.describe("Portfólio QA — estilo autor", () => {
   test("documentos de QA abrem em páginas separadas", async ({ page, request }) => {
     await page.goto("./");
     await page.getByRole("tab", { name: "Documentos" }).click();
-    await expect(page.getByRole("heading", { name: /Documentos de QA/i })).toBeVisible();
 
-    const titles = ["Onboarding de QA", "Automação de QA", "Manual de Automação"];
-    for (const title of titles) {
-      const link = page.getByRole("link", { name: new RegExp(title) });
+    const panel = page.getByRole("tabpanel", { name: "Documentos" });
+    await expect(panel.getByRole("heading", { name: "Documentos de QA" })).toBeVisible();
+
+    const documents = [
+      { name: "Onboarding de QA", file: "onboarding-de-qa.html" },
+      { name: "Automação de QA", file: "automacao-de-qa.html" },
+      { name: "Manual de Automação", file: "manual-de-automacao.html" },
+    ] as const;
+
+    await expect(panel.getByRole("link")).toHaveCount(documents.length);
+
+    for (const doc of documents) {
+      const link = panel.getByRole("link", { name: doc.name });
+      const filePattern = new RegExp(`(?:^|/)docs/${doc.file.replace(/\./g, "\\.")}$`);
+
       await expect(link).toBeVisible();
-      await expect(link).toHaveAttribute("href", /docs\/.+\.html$/);
+      await expect(link).toHaveAttribute("href", filePattern);
       await expect(link).toHaveAttribute("target", "_blank");
       await expect(link).toHaveAttribute("rel", /noopener/);
+
       const href = await link.getAttribute("href");
       const response = await request.get(new URL(href!, page.url()).toString());
       expect(response.status()).toBe(200);
+      expect(response.url()).toMatch(filePattern);
+
       const body = await response.text();
-      expect(body).not.toMatch(/feng\.rocks|Feng-Brasil\/feng-xt|dev_xt/);
-      expect(body).toContain(title);
+      expect(body).not.toMatch(/feng\.rocks|feng-brasil\/feng-xt|dev_xt/i);
+      const documentTitle = body.match(/<title>([^<]*)<\/title>/i)?.[1]?.trim() ?? "";
+      const documentH1 = body.match(/<h1>([^<]*)<\/h1>/i)?.[1]?.trim() ?? "";
+      expect(documentTitle).toMatch(new RegExp(`^${doc.name}(?:\\s|$)`));
+      expect(documentH1).toBe(doc.name);
     }
   });
 });
