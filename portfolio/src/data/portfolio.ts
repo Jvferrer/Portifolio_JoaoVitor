@@ -95,23 +95,23 @@ export const portfolio = {
   skills: skillGroups.flatMap((group) => [...group.items]),
   experience: [
     {
-      period: "Fev/2025 — atual",
-      role: "Analista de Testes de Software",
-      company: "Feng Brasil",
-      summary:
-        "7 produtos de e-commerce e sócio-torcedor. Responsável pela automação E2E e testes de carga.",
+      period: "Fev/2025 — 27/10/2026",
+      role: "Analista de teste/QA",
+      company: "Feng Brasil · Autônomo",
+      summary: "Rio de Janeiro, Brasil · Remoto",
       activities: [
-        "Automação E2E com Cypress nas jornadas de compra, cadastro e sócio-torcedor",
-        "Testes de carga com k6 em fluxos críticos",
-        "APIs (Postman) e banco PostgreSQL: triggers e jobs do time de database",
-        "Scripts versionados em Git/GitLab na regressão de release",
-        "Shift Left no Jira (Scrum/Kanban) e IA generativa em cenários e defeitos",
+        "Liderança do time de QA, reportando-se diretamente ao Head de Engenharia de Software, com definição de prioridades, estratégias e direcionamentos da área.",
+        "Desenvolvimento da equipe por meio de 1:1s, acompanhamento de desempenho, definição de objetivos e planos de desenvolvimento.",
+        "Estruturação e evolução de processos, padrões e práticas de Qualidade, fortalecendo a estratégia de testes e a melhoria contínua.",
+        "Coordenação de QA em projetos estratégicos: Flamengo, Vasco, Fluminense, São Paulo, Barcelona SC, Botafogo e projeto de IA.",
+        "Automação de testes com Cypress.",
+        "Planejamento e execução de testes funcionais, exploratórios, regressivos e de performance com k6, incluindo criação, preparação e manutenção de massas de teste.",
+        "Validação de APIs e integrações com Postman, PostgreSQL e DBeaver.",
+        "Gestão de tasks, bugs, riscos e demandas das squads, utilizando Jira, Scrum e Kanban.",
+        "Uso de IA generativa para otimização de cenários de teste, análise de defeitos e ampliação da cobertura.",
       ],
-      results: [
-        "Suíte Cypress e k6 na regressão dos 7 produtos",
-        "Efeito de trigger/job conferido no banco, ponta a ponta com a API",
-      ],
-      stack: ["Cypress", "k6", "Postman", "PostgreSQL", "GitLab", "IA generativa"],
+      results: [],
+      stack: ["Cypress", "k6", "Postman", "PostgreSQL", "DBeaver", "Jira"],
     },
     {
       period: "Dez/2022 — Dez/2024",
