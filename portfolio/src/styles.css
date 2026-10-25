@@ -213,15 +213,6 @@ button {
   font-weight: 700;
 }
 
-.headline {
-  margin: 0.35rem 0 0;
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.86rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
 .location {
   margin: 0.35rem 0 0;
   text-align: center;

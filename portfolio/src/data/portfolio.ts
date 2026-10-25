@@ -74,7 +74,6 @@ export const portfolio = {
   profile: {
     name: "João Vitor Ferrer",
     role: "Analista de QA | Automação de Testes (Web e API)",
-    headline: "Cypress · k6 · IA no ciclo de QA · ISTQB® CTFL",
     location: "Santo André, SP · Brasil",
     summary: [
       "Sou Analista de Testes/QA, com cerca de 6 anos de atuação, foco em qualidade contínua e automação em aplicações Web, API e Mobile.",

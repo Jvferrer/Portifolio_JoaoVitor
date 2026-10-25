@@ -31,8 +31,8 @@ check("Subtítulo Skills", /Linguagens, ferramentas e práticas/.test(source.app
 check("Sem dashboard/loja", !/dashboard\//.test(all) && !/Quality Gate/.test(all) && !/Jv-Funkos/.test(all), "sem lab antigo");
 check("Projetos reais", /nacaopremios\.flamengo\.com\.br/.test(source.data) && /nacao\.flamengo\.com\.br/.test(source.data) && /sociosbsc\.com\.ec/.test(source.data), "Nação, Prêmios e Barcelona SC");
 check("Tipografia", /family=Sora/.test(source.html) && /family=Figtree/.test(source.html), "Sora + Figtree");
-check("Headline LinkedIn", /Analista de QA \| Automação de Testes \(Web e API\)/.test(source.data) && /Cypress · k6 · IA no ciclo de QA · ISTQB® CTFL/.test(source.data), "role e headline");
-check("SEO social", /rel="canonical"/.test(source.html) && /og:image/.test(source.html) && /Cypress · k6/.test(source.html), "canonical, og:image e headline");
+check("Cargo no perfil", /Analista de QA \| Automação de Testes \(Web e API\)/.test(source.data) && !/headline:/.test(source.data), "cargo sem repetir a stack");
+check("SEO social", /rel="canonical"/.test(source.html) && /og:image/.test(source.html) && /Analista de QA/.test(source.html), "canonical, og:image e cargo");
 check("Contraste de CTA", /--accent-fill: #166534/.test(source.css) && /:focus-visible/.test(source.css), "botão AA e foco visível");
 check("Links externos", /noopener noreferrer/.test(source.app), "noopener nos target=_blank");
 const docNames = ["onboarding-de-qa.html", "automacao-de-qa.html", "manual-de-automacao.html"];

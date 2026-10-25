@@ -31,7 +31,6 @@ function Sidebar() {
         <img className="avatar" src={profile.photo} alt={`Foto de ${profile.name}`} />
         <h1 className="name">{profile.name}</h1>
         <p className="role">{profile.role}</p>
-        <p className="headline">{profile.headline}</p>
         <p className="location">{profile.location}</p>
 
         <ul className="social">
