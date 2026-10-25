@@ -156,6 +156,8 @@ test.describe("Portfólio QA — estilo autor", () => {
 
       const body = await response.text();
       expect(body).not.toMatch(/feng/i);
+      expect(body).toContain('rel="icon" href="favicon.svg"');
+      expect(body).not.toContain("data:image/png;base64");
       const documentTitle = body.match(/<title>([^<]*)<\/title>/i)?.[1]?.trim() ?? "";
       const documentH1 = body.match(/<h1>([^<]*)<\/h1>/i)?.[1]?.trim() ?? "";
       expect(documentTitle).toMatch(new RegExp(`^${doc.name}(?:\\s|$)`));

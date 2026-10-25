@@ -44,6 +44,13 @@ const docPaths = docNames.map((name) => path.join(root, "public", "docs", name))
 const docText = docPaths.filter(fs.existsSync).map((filePath) => fs.readFileSync(filePath, "utf8")).join("\n");
 check("Docs de QA", docPaths.every(fs.existsSync) && /Onboarding de QA/.test(source.data) && /Manual de Automação/.test(source.data), "três HTML em public/docs");
 check("Docs sem infra interna", docText.length > 0 && !/feng\.rocks|Feng-Brasil\/feng-xt|feng-tech|dev_xt/.test(docText), "sem URL de homologação, repo privado ou config de segredo");
+check(
+  "Ícone dos documentos",
+  fs.existsSync(path.join(root, "public", "docs", "favicon.svg")) &&
+    docPaths.every((filePath) => /rel="icon" href="favicon\.svg"/.test(fs.readFileSync(filePath, "utf8"))) &&
+    !/data:image\/png;base64/.test(docText),
+  "símbolo próprio, sem o escudo antigo",
+);
 
 for (const result of results) console.log(`${result.passed ? "PASS" : "FAIL"} | ${result.name} | ${result.detail}`);
 const failures = results.filter((result) => !result.passed);
