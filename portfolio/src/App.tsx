@@ -120,32 +120,11 @@ function ExperiencePanel() {
               <span>{job.period}</span>
             </header>
             <p className="job-summary">{job.summary}</p>
-            {job.results.length > 0 ? (
-              <div className="split">
-                <div>
-                  <h4>Atividades</h4>
-                  <ul>
-                    {job.activities.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h4>Resultados</h4>
-                  <ul>
-                    {job.results.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ) : (
-              <ul>
-                {job.activities.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            )}
+            <ul className="job-points">
+              {[...job.activities, ...job.results].map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
             <p className="stack-line">{job.stack.join(" · ")}</p>
           </article>
         ))}

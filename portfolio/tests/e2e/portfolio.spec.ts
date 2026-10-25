@@ -41,8 +41,8 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.getByRole("heading", { name: "Analista de teste/QA" })).toBeVisible();
     await expect(page.getByText("Fev/2025 — Out/2026")).toBeVisible();
     await expect(page.getByText(/Liderança do time de QA/i)).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Atividades" }).first()).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Resultados" }).first()).toBeVisible();
+    await expect(page.getByText(/Homologação Vivo com evidência rastreável no Octane/i)).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Atividades" })).toHaveCount(0);
 
     await page.getByRole("tab", { name: "Projetos" }).click();
     await expect(page.getByRole("heading", { name: /Projetos em destaque/i })).toBeVisible();

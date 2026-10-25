@@ -435,28 +435,13 @@ button {
   color: var(--muted);
 }
 
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.9rem 1.25rem;
-}
-
-.split h4 {
-  margin: 0 0 0.4rem;
-  color: var(--accent);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.split ul {
+.job-points {
   margin: 0;
   padding-left: 1.1rem;
   color: var(--muted);
 }
 
-.split li + li {
+.job-points li + li {
   margin-top: 0.3rem;
 }
 
@@ -579,8 +564,7 @@ button {
 
   .skill-grid,
   .project-grid,
-  .credential-grid,
-  .split {
+  .credential-grid {
     grid-template-columns: 1fr;
   }
 
