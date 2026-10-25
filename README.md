@@ -42,7 +42,7 @@ Sou Analista de Testes/QA Sênior, com cerca de 6 anos de atuação, foco em qua
 
 Atuo em testes manuais e automação de testes, do planejamento à execução, regressão e investigação de defeitos, além de integrações, dados e performance.
 
-Uso IA no ciclo de qualidade para cenários, documentação e análise de defeitos. Sou certificado ISTQB® CTFL (26-CTFL-15087-BR) e pós-graduando em Testes de Software.
+Uso IA no ciclo de qualidade para cenários, documentação e análise de defeitos. Sou certificado ISTQB® CTFL (26-CTFL-15087-BR) e pós-graduado em Testes de Software.
 
 ---
 

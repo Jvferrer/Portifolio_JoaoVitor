@@ -11,6 +11,7 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.getByRole("img", { name: /Foto de João Vitor Ferrer/i })).toBeVisible();
     await expect(page.getByRole("heading", { name: /Qualidade contínua e automação/i })).toBeVisible();
     await expect(page.getByText(/testes manuais e automação de testes/i)).toBeVisible();
+    await expect(page.getByText(/pós-graduado em Testes de Software/i)).toBeVisible();
     await expect(page.locator(".summary")).not.toContainText(/Cypress|Selenium|Playwright|JMeter|MCP/);
     await expect(page.getByRole("link", { name: /Baixar currículo/i })).toBeVisible();
     await expect(page.getByRole("tab", { name: "Skills" })).toBeVisible();
@@ -78,6 +79,8 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.getByRole("heading", { name: /ISTQB.*Foundation Level 4\.0/i })).toBeVisible();
     await expect(page.locator(".cred-meta").filter({ hasText: /26-CTFL-15087-BR/i })).toBeVisible();
     await expect(page.getByText(/Bacharelado em ADS/i)).toBeVisible();
+    await expect(page.locator("article").filter({ hasText: "Unyleya" })).toContainText("Fev/2026 — Nov/2026");
+    await expect(page.locator("article").filter({ hasText: "Unyleya" })).toContainText("Concluída");
     await expect(page.getByText(/Unyleya/i).first()).toBeVisible();
     await expect(page.getByRole("link", { name: "Baixar certificado" })).toHaveCount(3);
     await expect(page.locator("article").filter({ hasText: "Bacharelado em ADS" }).getByRole("link", { name: "Baixar certificado" })).toBeVisible();
