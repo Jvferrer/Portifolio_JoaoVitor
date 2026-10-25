@@ -5,7 +5,7 @@ test.describe("Portfólio QA — estilo autor", () => {
     await page.goto("./");
     await expect(page).toHaveTitle(/João Vitor Ferrer/);
     await expect(page.locator(".name")).toHaveText(/João Vitor Ferrer/);
-    await expect(page.getByText(/Analista de QA \| Automação de Testes \(Web e API\)/i).first()).toBeVisible();
+    await expect(page.getByText("Analista de QA Sênior").first()).toBeVisible();
     await expect(page.locator(".headline")).toHaveCount(0);
     await expect(page.locator(".location")).toHaveText("Santo André, SP · Brasil");
     await expect(page.getByRole("img", { name: /Foto de João Vitor Ferrer/i })).toBeVisible();
@@ -36,14 +36,14 @@ test.describe("Portfólio QA — estilo autor", () => {
 
     await page.getByRole("tab", { name: "Experiência" }).click();
     await expect(page.getByRole("heading", { name: /Trajetória profissional/i })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Analista de Testes Sênior" })).toBeVisible();
     await expect(page.locator(".company").filter({ hasText: "Stefanini Brasil" })).toBeVisible();
+    await expect(page.getByText("São Paulo e Região · Híbrido")).toBeVisible();
     await expect(page.getByText("Out/2026 — atual")).toBeVisible();
     await expect(page.getByText(/GEDAVE, junto à PRODESP/i)).toBeVisible();
     await expect(page.getByRole("heading", { name: "Arquiteto de testes" })).toBeVisible();
     await expect(page.getByText(/Sinfonia CX/i)).toBeVisible();
     await expect(page.locator(".company").filter({ hasText: /Feng Brasil/i })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Analista de teste de software" })).toHaveCount(3);
+    await expect(page.getByRole("heading", { name: "Analista de teste de software" })).toHaveCount(4);
     await expect(page.getByText("Fev/2025 — Out/2026")).toBeVisible();
     await expect(page.getByText(/Liderança do time de QA/i)).toBeVisible();
     await expect(page.getByText(/São Paulo, Brasil · Híbrido/)).toBeVisible();

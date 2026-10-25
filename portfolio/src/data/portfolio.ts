@@ -75,7 +75,7 @@ export const skillGroups = [
 export const portfolio = {
   profile: {
     name: "João Vitor Ferrer",
-    role: "Analista de QA | Automação de Testes (Web e API)",
+    role: "Analista de QA Sênior",
     location: "Santo André, SP · Brasil",
     summary: [
       "Sou Analista de Testes/QA, com cerca de 6 anos de atuação, foco em qualidade contínua e automação em aplicações Web, API e Mobile.",
@@ -97,9 +97,9 @@ export const portfolio = {
   experience: [
     {
       period: "Out/2026 — atual",
-      role: "Analista de Testes Sênior",
+      role: "Analista de teste de software",
       company: "Stefanini Brasil",
-      summary: "São Paulo e Região · Tempo integral",
+      summary: "São Paulo e Região · Híbrido",
       activities: [
         "Implantação e manutenção no sistema de Internet da SAA – Secretaria de Agricultura e Abastecimento – GEDAVE, junto à PRODESP.",
       ],
