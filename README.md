@@ -5,20 +5,6 @@
 <br/>
 
 <div align="center">
-
-**[🚀 Abrir o portfólio ao vivo →](https://jvferrer.github.io/Portifolio_JoaoVitor/)**
-
-**Analista de QA | Automação de Testes | Web & API | IA aplicada a QA**
-
-Cypress · Playwright · Robot Framework · Selenium · k6 · Postman · SQL · LLMs · MCP
-
-Santo André, SP · Brasil
-
-</div>
-
-<br/>
-
-<div align="center">
   <img src="assets/generated/stats-card.svg" width="850" alt="Estatísticas de QA"/>
 </div>
 
