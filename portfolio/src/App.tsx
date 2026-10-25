@@ -40,14 +40,14 @@ function Sidebar() {
             </a>
           </li>
           <li>
-            <a href={profile.indeed} target="_blank" rel={externalRel}>
-              Indeed
-            </a>
-          </li>
-          <li>
             <a href={profile.github} target="_blank" rel={externalRel}>
               GitHub
             </a>
+          </li>
+          <li>
+            <button type="button" className="linkish" onClick={copyEmail}>
+              {copied ? "E-mail copiado" : profile.email}
+            </button>
           </li>
           <li>
             <a href={profile.whatsapp} target="_blank" rel={externalRel}>
@@ -55,9 +55,9 @@ function Sidebar() {
             </a>
           </li>
           <li>
-            <button type="button" className="linkish" onClick={copyEmail}>
-              {copied ? "E-mail copiado" : profile.email}
-            </button>
+            <a href={profile.indeed} target="_blank" rel={externalRel}>
+              Indeed
+            </a>
           </li>
           <li>
             <a href={profile.instagram} target="_blank" rel={externalRel}>

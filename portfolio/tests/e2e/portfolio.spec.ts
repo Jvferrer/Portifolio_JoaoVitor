@@ -112,6 +112,14 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.getByRole("link", { name: "Indeed" }).first()).toHaveAttribute("href", /profile\.indeed\.com/);
     await expect(page.getByRole("link", { name: "Indeed" }).first()).toHaveAttribute("rel", /noopener/);
     await expect(page.getByRole("link", { name: "GitHub" }).first()).toBeVisible();
+    await expect(page.locator(".social li")).toHaveText([
+      "LinkedIn",
+      "GitHub",
+      "joao.21ferrer@gmail.com",
+      "WhatsApp",
+      "Indeed",
+      "Instagram",
+    ]);
   });
 
   test("assets respondem 200", async ({ page, request }) => {
