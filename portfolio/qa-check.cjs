@@ -23,7 +23,7 @@ const all = Object.values(source).join("\n");
 
 check("Arquivos essenciais", Object.values(files).every(fs.existsSync), "app, dados, estilos e assets");
 check("Layout sidebar + abas", /sidebar/.test(source.app) && /role="tablist"/.test(source.app), "perfil lateral e tabs");
-check("Abas principais", ["Skills", "Experiência", "Projetos", "Certificações"].every((t) => source.app.includes(t)), "quatro abas");
+check("Abas principais", ["Skills", "Experiência", "Projetos", "Certificações", "Documentos"].every((t) => source.app.includes(t)), "cinco abas");
 check("Tabs ARIA", /aria-controls=\{`panel-\$\{item\.id\}`\}/.test(source.app) && /aria-labelledby=\{`tab-\$\{tab\}`\}/.test(source.app), "controls e labelledby");
 check("Credenciais", /ISTQB® Foundation Level 4\.0/.test(source.data) && /Estácio/.test(source.data) && /Unyleya/.test(source.data) && /26-CTFL-15087-BR/.test(source.data), "ISTQB, ADS e pós");
 check("Skills agrupadas", /title: "Linguagens"/.test(source.data) && /title: "Automação e performance"/.test(source.data) && /title: "API e dados"/.test(source.data) && /title: "IA no ciclo de QA"/.test(source.data), "linguagens, automação, dados e IA");
@@ -35,6 +35,11 @@ check("Headline LinkedIn", /Analista de QA \| Automação de Testes \(Web e API\
 check("SEO social", /rel="canonical"/.test(source.html) && /og:image/.test(source.html) && /Cypress · k6/.test(source.html), "canonical, og:image e headline");
 check("Contraste de CTA", /--accent-fill: #166534/.test(source.css) && /:focus-visible/.test(source.css), "botão AA e foco visível");
 check("Links externos", /noopener noreferrer/.test(source.app), "noopener nos target=_blank");
+const docNames = ["onboarding-de-qa.html", "automacao-de-qa.html", "manual-de-automacao.html"];
+const docPaths = docNames.map((name) => path.join(root, "public", "docs", name));
+const docText = docPaths.filter(fs.existsSync).map((filePath) => fs.readFileSync(filePath, "utf8")).join("\n");
+check("Docs de QA", docPaths.every(fs.existsSync) && /Onboarding de QA/.test(source.data) && /Manual de Automação/.test(source.data), "três HTML em public/docs");
+check("Docs sem infra interna", docText.length > 0 && !/feng\.rocks|Feng-Brasil\/feng-xt|feng-tech|dev_xt/.test(docText), "sem URL de homologação, repo privado ou config de segredo");
 
 for (const result of results) console.log(`${result.passed ? "PASS" : "FAIL"} | ${result.name} | ${result.detail}`);
 const failures = results.filter((result) => !result.passed);

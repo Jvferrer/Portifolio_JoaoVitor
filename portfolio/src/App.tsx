@@ -6,6 +6,7 @@ const tabs: { id: TabId; label: string }[] = [
   { id: "experiencia", label: "Experiência" },
   { id: "projetos", label: "Projetos" },
   { id: "certificacoes", label: "Certificações" },
+  { id: "documentos", label: "Documentos" },
 ];
 
 const externalRel = "noopener noreferrer";
@@ -171,6 +172,25 @@ function ProjectsPanel() {
   );
 }
 
+function DocumentsPanel() {
+  return (
+    <section className="panel">
+      <h2>Documentos de QA</h2>
+      <p className="panel-lead">Guias de processo e automação publicados como páginas separadas.</p>
+      <div className="project-grid">
+        {portfolio.documents.map((doc) => (
+          <a key={doc.name} className="project-link" href={doc.href} target="_blank" rel={externalRel}>
+            <span>{doc.kind}</span>
+            <strong>{doc.name}</strong>
+            <p>{doc.description}</p>
+            <em>{doc.cta}</em>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function CredentialsPanel() {
   return (
     <section className="panel">
@@ -315,6 +335,7 @@ function App() {
             {tab === "experiencia" && <ExperiencePanel />}
             {tab === "projetos" && <ProjectsPanel />}
             {tab === "certificacoes" && <CredentialsPanel />}
+            {tab === "documentos" && <DocumentsPanel />}
           </div>
         </main>
       </div>

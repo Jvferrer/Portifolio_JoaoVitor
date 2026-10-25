@@ -99,4 +99,25 @@ test.describe("Portfólio QA — estilo autor", () => {
     const resumeRes = await request.get(new URL(resume!, page.url()).toString());
     expect(resumeRes.status()).toBe(200);
   });
+
+  test("documentos de QA abrem em páginas separadas", async ({ page, request }) => {
+    await page.goto("./");
+    await page.getByRole("tab", { name: "Documentos" }).click();
+    await expect(page.getByRole("heading", { name: /Documentos de QA/i })).toBeVisible();
+
+    const titles = ["Onboarding de QA", "Automação de QA", "Manual de Automação"];
+    for (const title of titles) {
+      const link = page.getByRole("link", { name: new RegExp(title) });
+      await expect(link).toBeVisible();
+      await expect(link).toHaveAttribute("href", /docs\/.+\.html$/);
+      await expect(link).toHaveAttribute("target", "_blank");
+      await expect(link).toHaveAttribute("rel", /noopener/);
+      const href = await link.getAttribute("href");
+      const response = await request.get(new URL(href!, page.url()).toString());
+      expect(response.status()).toBe(200);
+      const body = await response.text();
+      expect(body).not.toMatch(/feng\.rocks|Feng-Brasil\/feng-xt|dev_xt/);
+      expect(body).toContain(title);
+    }
+  });
 });

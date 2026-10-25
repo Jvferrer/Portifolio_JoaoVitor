@@ -16,6 +16,14 @@ export type Project = {
   cta: string;
 };
 
+export type PortfolioDoc = {
+  name: string;
+  kind: string;
+  description: string;
+  href: string;
+  cta: string;
+};
+
 export type Credential = {
   title: string;
   institution: string;
@@ -226,6 +234,29 @@ export const portfolio = {
       detail: "Em andamento",
     },
   ] satisfies Credential[],
+  documents: [
+    {
+      name: "Onboarding de QA",
+      kind: "Processo · v1.2",
+      description: "Entrada do QA: acessos, casos de teste, evidências e fluxo no Jira.",
+      href: `${import.meta.env.BASE_URL}docs/onboarding-de-qa.html`,
+      cta: "Abrir documento",
+    },
+    {
+      name: "Automação de QA",
+      kind: "Playwright · v1.0",
+      description: "Guia da suíte: arquitetura, POM, setup da máquina e comandos do dia a dia.",
+      href: `${import.meta.env.BASE_URL}docs/automacao-de-qa.html`,
+      cta: "Abrir documento",
+    },
+    {
+      name: "Manual de Automação",
+      kind: "Playwright · v1.0",
+      description: "Passo a passo da automação: ambiente, estrutura do projeto e pipeline.",
+      href: `${import.meta.env.BASE_URL}docs/manual-de-automacao.html`,
+      cta: "Abrir documento",
+    },
+  ] satisfies PortfolioDoc[],
 } as const;
 
-export type TabId = "skills" | "experiencia" | "projetos" | "certificacoes";
+export type TabId = "skills" | "experiencia" | "projetos" | "certificacoes" | "documentos";

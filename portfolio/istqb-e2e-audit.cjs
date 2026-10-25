@@ -81,7 +81,7 @@ async function run() {
         "Imagem carregada sem quebra",
       ),
     );
-    results.push(test("Quatro abas", await page.getByRole("tab").count() === 4, "Skills, Experiência, Projetos, Certificações"));
+    results.push(test("Cinco abas", await page.getByRole("tab").count() === 5, "Skills, Experiência, Projetos, Certificações, Documentos"));
     results.push(
       test(
         "Tab Skills com ARIA",
@@ -101,6 +101,14 @@ async function run() {
 
     await page.getByRole("tab", { name: "Projetos" }).click();
     results.push(test("Sete produtos", await page.locator(".project-link").count() === 7, "clubes públicos"));
+
+    await page.getByRole("tab", { name: "Documentos" }).click();
+    results.push(test("Três documentos", await page.locator(".project-link").count() === 3, "onboarding, automação e manual"));
+    const docHref = await page.getByRole("link", { name: /Onboarding de QA/i }).getAttribute("href");
+    const docResponse = await page.request.get(new URL(docHref, page.url()).toString());
+    const docBody = await docResponse.text();
+    results.push(test("Onboarding publicado", docResponse.status() === 200 && /Onboarding de QA/.test(docBody), "HTML separado responde 200"));
+    results.push(test("Sem URL interna no doc", !/feng\.rocks|Feng-Brasil\/feng-xt|dev_xt/.test(docBody), "homologação e repo privado fora do HTML"));
 
     await page.getByRole("tab", { name: "Certificações" }).click();
     results.push(test("ISTQB 4.0 com ID", await page.locator(".cred-meta").filter({ hasText: /26-CTFL-15087-BR/ }).isVisible(), "credencial visível"));
