@@ -38,15 +38,11 @@ Santo André, SP · Brasil
 
 # 🧪 Sobre mim
 
-Sou **Analista de QA**, com atuação em Quality Assurance, testes manuais e automação, voltada à validação de aplicações Web, APIs e sistemas Mobile.
+Sou Analista de Testes/QA Sênior, com cerca de 6 anos de atuação, foco em qualidade contínua e automação em aplicações Web, API e Mobile.
 
-Minha atuação envolve o ciclo de qualidade de software, desde o entendimento dos requisitos, análise de riscos e planejamento de testes até a execução, automação, validação de dados e investigação de bugs.
+Atuo em testes manuais e automação de testes, do planejamento à execução, regressão e investigação de defeitos, além de integrações, dados e performance.
 
-Tenho experiência com testes funcionais, exploratórios, regressivos, de integração e de API, além de validações de regras de negócio e banco de dados.
-
-Também direciono minha evolução profissional para a interseção entre **Quality Engineering e Inteligência Artificial**, explorando IA generativa, LLMs, agentes de IA e MCP aplicados ao ciclo de QA.
-
-Sou certificado **ISTQB® CTFL 4.0** e busco aprimorar continuamente minhas práticas de qualidade, automação e prevenção de defeitos.
+Uso IA no ciclo de qualidade para cenários, documentação e análise de defeitos. Sou certificado ISTQB® CTFL (26-CTFL-15087-BR) e pós-graduando em Testes de Software.
 
 ---
 
