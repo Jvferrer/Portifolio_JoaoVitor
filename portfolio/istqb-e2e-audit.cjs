@@ -96,8 +96,8 @@ async function run() {
     results.push(test("MCP como conhecimento", await page.getByText("MCP (conhecimento)").isVisible(), "MCP sem vender como entrega"));
 
     await page.getByRole("tab", { name: "Experiência" }).click();
-    results.push(test("Quatro experiências", await page.locator(".timeline article").count() === 4, "Feng, Spread, AchieveMore, Biz"));
-    results.push(test("Feng primeiro", await page.locator(".company").first().innerText().then((text) => text.includes("Feng")), "ordem cronológica"));
+    results.push(test("Cinco experiências", await page.locator(".timeline article").count() === 5, "Stefanini, Feng, Spread, AchieveMore, Biz"));
+    results.push(test("Stefanini primeiro", await page.locator(".company").first().innerText().then((text) => text.includes("Stefanini")), "vaga atual no topo"));
 
     await page.getByRole("tab", { name: "Projetos" }).click();
     results.push(test("Sete produtos", await page.locator(".project-link").count() === 7, "clubes públicos"));

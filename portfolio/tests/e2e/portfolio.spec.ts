@@ -40,12 +40,13 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.locator(".company").filter({ hasText: "Stefanini Brasil" })).toBeVisible();
     await expect(page.getByText("Jul/2020 — atual")).toBeVisible();
     await expect(page.getByText(/GEDAVE, junto à PRODESP/i)).toBeVisible();
-    await expect(page.getByRole("heading", { name: /Analista de Testes de Software/i }).first()).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Arquiteto de testes" })).toBeVisible();
+    await expect(page.getByText(/Sinfonia CX/i)).toBeVisible();
     await expect(page.locator(".company").filter({ hasText: /Feng Brasil/i })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Analista de teste/QA" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Analista de teste/QA" })).toHaveCount(3);
     await expect(page.getByText("Fev/2025 — Out/2026")).toBeVisible();
     await expect(page.getByText(/Liderança do time de QA/i)).toBeVisible();
-    await expect(page.getByText(/Homologação Vivo com evidência rastreável no Octane/i)).toBeVisible();
+    await expect(page.getByText(/São Paulo, Brasil · Híbrido/)).toBeVisible();
     await expect(page.getByRole("heading", { name: "Atividades" })).toHaveCount(0);
 
     await page.getByRole("tab", { name: "Projetos" }).click();
