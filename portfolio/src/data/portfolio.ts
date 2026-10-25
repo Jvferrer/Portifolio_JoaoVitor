@@ -51,7 +51,7 @@ export const skillGroups = [
   },
   {
     title: "API e dados",
-    items: ["Postman", "Swagger", "SQL", "PostgreSQL", "Triggers e jobs", "MySQL", "Oracle"],
+    items: ["API", "SQL"],
   },
   {
     title: "Práticas e gestão",
