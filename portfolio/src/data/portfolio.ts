@@ -95,7 +95,7 @@ export const portfolio = {
   skills: skillGroups.flatMap((group) => [...group.items]),
   experience: [
     {
-      period: "Fev/2025 — 27/10/2026",
+      period: "Fev/2025 — Out/2026",
       role: "Analista de teste/QA",
       company: "Feng Brasil · Autônomo",
       summary: "Rio de Janeiro, Brasil · Remoto",

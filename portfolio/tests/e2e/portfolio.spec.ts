@@ -38,7 +38,7 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.getByRole("heading", { name: /Analista de Testes de Software/i }).first()).toBeVisible();
     await expect(page.locator(".company").filter({ hasText: /Feng Brasil/i })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Analista de teste/QA" })).toBeVisible();
-    await expect(page.getByText("Fev/2025 — 27/10/2026")).toBeVisible();
+    await expect(page.getByText("Fev/2025 — Out/2026")).toBeVisible();
     await expect(page.getByText(/Liderança do time de QA/i)).toBeVisible();
     await expect(page.getByRole("heading", { name: "Atividades" }).first()).toBeVisible();
     await expect(page.getByRole("heading", { name: "Resultados" }).first()).toBeVisible();
