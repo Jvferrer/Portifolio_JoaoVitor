@@ -56,6 +56,9 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.locator(".cred-meta").filter({ hasText: /26-CTFL-15087-BR/i })).toBeVisible();
     await expect(page.getByText(/Bacharelado em ADS/i)).toBeVisible();
     await expect(page.getByText(/Unyleya/i).first()).toBeVisible();
+    await expect(page.getByRole("link", { name: "Baixar certificado" })).toHaveCount(2);
+    await expect(page.locator("article").filter({ hasText: "Bacharelado em ADS" }).getByRole("link")).toHaveCount(0);
+    await expect(page.locator("article").filter({ hasText: "Unyleya" }).getByRole("link")).toHaveCount(0);
   });
 
   test("navegação por teclado nas abas", async ({ page }) => {
@@ -102,6 +105,16 @@ test.describe("Portfólio QA — estilo autor", () => {
     const resume = await page.getByRole("link", { name: /Baixar currículo/i }).getAttribute("href");
     const resumeRes = await request.get(new URL(resume!, page.url()).toString());
     expect(resumeRes.status()).toBe(200);
+
+    await page.getByRole("tab", { name: "Certificações" }).click();
+    const certificates = page.getByRole("link", { name: "Baixar certificado" });
+    await expect(certificates).toHaveCount(2);
+    for (const link of await certificates.all()) {
+      const href = await link.getAttribute("href");
+      const file = await request.get(new URL(href!, page.url()).toString());
+      expect(file.status()).toBe(200);
+      expect(file.headers()["content-type"]).toContain("image/jpeg");
+    }
   });
 
   test("documentos de QA abrem em páginas separadas", async ({ page, request }) => {

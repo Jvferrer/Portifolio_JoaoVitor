@@ -191,6 +191,11 @@ function CredentialsPanel() {
               {item.period}
               {item.detail ? ` · ${item.detail}` : ""}
             </p>
+            {item.file ? (
+              <a className="button secondary credential-download" href={item.file} download={item.downloadName}>
+                Baixar certificado
+              </a>
+            ) : null}
           </article>
         ))}
       </div>

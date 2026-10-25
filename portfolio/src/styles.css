@@ -497,6 +497,14 @@ button {
   color: var(--muted);
 }
 
+.credential-download {
+  margin-top: 0.45rem;
+  min-height: 36px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  justify-self: start;
+}
+
 .project-link em {
   margin-top: 0.35rem;
   color: var(--ink);

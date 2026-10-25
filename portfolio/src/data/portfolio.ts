@@ -29,6 +29,8 @@ export type Credential = {
   institution: string;
   period: string;
   detail?: string;
+  file?: string;
+  downloadName?: string;
 };
 
 export type SkillGroup = {
@@ -214,11 +216,15 @@ export const portfolio = {
       institution: "ISTQB®",
       period: "2026",
       detail: "Credencial 26-CTFL-15087-BR",
+      file: `${import.meta.env.BASE_URL}assets/certificados/istqb-ctfl.jpg`,
+      downloadName: "ISTQB_CTFL_Joao_Vitor_Ferrer.jpg",
     },
     {
       title: "Scrum Fundamentals Certified",
       institution: "Vabro.ai · VMEdu",
       period: "2025",
+      file: `${import.meta.env.BASE_URL}assets/certificados/scrum-fundamentals.jpg`,
+      downloadName: "Scrum_Fundamentals_Joao_Vitor_Ferrer.jpg",
     },
     {
       title: "Bacharelado em ADS",

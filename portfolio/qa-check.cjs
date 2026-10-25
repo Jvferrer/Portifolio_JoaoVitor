@@ -9,6 +9,8 @@ const files = {
   css: path.join(root, "src", "styles.css"),
   photo: path.join(root, "public", "assets", "joao-vitor-ferrer.jpg"),
   resume: path.join(root, "public", "assets", "Curriculo_Joao_Vitor_Ferrer_QA.pdf"),
+  ctfl: path.join(root, "public", "assets", "certificados", "istqb-ctfl.jpg"),
+  scrum: path.join(root, "public", "assets", "certificados", "scrum-fundamentals.jpg"),
 };
 
 const source = Object.fromEntries(
@@ -26,6 +28,7 @@ check("Layout sidebar + abas", /sidebar/.test(source.app) && /role="tablist"/.te
 check("Abas principais", ["Skills", "Experiência", "Projetos", "Certificações", "Documentos"].every((t) => source.app.includes(t)), "cinco abas");
 check("Tabs ARIA", /aria-controls=\{`panel-\$\{item\.id\}`\}/.test(source.app) && /aria-labelledby=\{`tab-\$\{tab\}`\}/.test(source.app), "controls e labelledby");
 check("Credenciais", /ISTQB® Foundation Level 4\.0/.test(source.data) && /Estácio/.test(source.data) && /Unyleya/.test(source.data) && /26-CTFL-15087-BR/.test(source.data), "ISTQB, ADS e pós");
+check("Download de certificados", /Baixar certificado/.test(source.app) && /assets\/certificados\/istqb-ctfl\.jpg/.test(source.data) && /assets\/certificados\/scrum-fundamentals\.jpg/.test(source.data), "CTFL e Scrum com arquivo");
 check("Skills agrupadas", /title: "Linguagens"/.test(source.data) && /title: "Automação e performance"/.test(source.data) && /title: "API e dados"/.test(source.data) && /title: "IA no ciclo de QA"/.test(source.data), "linguagens, automação, dados e IA");
 check("Subtítulo Skills", /Linguagens, ferramentas e práticas/.test(source.app), "não chama linguagem de ferramenta");
 check("Sem dashboard/loja", !/dashboard\//.test(all) && !/Quality Gate/.test(all) && !/Jv-Funkos/.test(all), "sem lab antigo");
