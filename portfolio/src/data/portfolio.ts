@@ -108,7 +108,7 @@ export const portfolio = {
     },
     {
       period: "Fev/2025 — Out/2026",
-      role: "Analista de teste/QA",
+      role: "Analista de teste de software",
       company: "Feng Brasil · Autônomo",
       summary: "Rio de Janeiro, Brasil · Remoto",
       activities: [
@@ -143,7 +143,7 @@ export const portfolio = {
     },
     {
       period: "Set/2020 — Nov/2021",
-      role: "Analista de teste/QA",
+      role: "Analista de teste de software",
       company: "AchieveMore · Tempo integral",
       summary: "São Paulo, Brasil · Remoto",
       activities: [
@@ -159,7 +159,7 @@ export const portfolio = {
     },
     {
       period: "Jul/2019 — Jul/2020",
-      role: "Analista de teste/QA",
+      role: "Analista de teste de software",
       company: "Biz · Tempo integral",
       summary: "São Paulo, Brasil · Híbrido",
       activities: [
