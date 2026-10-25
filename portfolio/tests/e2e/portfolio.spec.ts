@@ -37,8 +37,8 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.getByRole("heading", { name: /Especialidades/i })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Linguagens" })).toBeVisible();
     await expect(page.locator(".skill-group", { hasText: "Linguagens" }).locator("li")).toHaveText([
-      "HTML Living Standard",
-      "CSS 2026",
+      "HTML",
+      "CSS",
       "JavaScript",
       "TypeScript",
       "Python",
