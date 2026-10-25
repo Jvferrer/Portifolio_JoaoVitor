@@ -10,6 +10,8 @@ test.describe("Portfólio QA — estilo autor", () => {
     await expect(page.locator(".location")).toHaveText("Santo André, SP · Brasil");
     await expect(page.getByRole("img", { name: /Foto de João Vitor Ferrer/i })).toBeVisible();
     await expect(page.getByRole("heading", { name: /Qualidade contínua e automação/i })).toBeVisible();
+    await expect(page.getByText(/testes manuais e automação de testes/i)).toBeVisible();
+    await expect(page.locator(".summary")).not.toContainText(/Cypress|Selenium|Playwright|JMeter|MCP/);
     await expect(page.getByRole("link", { name: /Baixar currículo/i })).toBeVisible();
     await expect(page.getByRole("tab", { name: "Skills" })).toBeVisible();
     await expect(page.getByRole("link", { name: /Pular para o conteúdo/i })).toBeAttached();
